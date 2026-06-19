@@ -133,20 +133,6 @@ export default function PortfolioPage() {
         <div className="space-y-6 animate-in fade-in duration-500">
             {/* Filters */}
             <div className="flex flex-wrap items-center gap-3 bg-card p-4 rounded-2xl border border-border shadow-sm">
-                {currentUserRole !== 'SALESPERSON' && (
-                <div className="flex items-center gap-2">
-                    <Filter size={18} className="text-muted-foreground" />
-                    <select
-                        value={selectedStaffId}
-                        onChange={handleStaffChange}
-                        className="bg-background border border-border rounded-lg px-3 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-primary"
-                    >
-                        {staff.map(s => (
-                            <option key={s.id} value={s.id}>{s.name || s.username}</option>
-                        ))}
-                    </select>
-                </div>
-                )}
                 <select
                     value={statusFilter}
                     onChange={handleStatusFilterChange}
