@@ -68,9 +68,16 @@ export async function middleware(request: NextRequest) {
     // 2. Prepare Supabase client
     let supabaseResponse = i18nResponse;
 
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+
+    if (!supabaseUrl || !supabaseKey) {
+        throw new Error('Supabase URL and Key (ANON_KEY/PUBLISHABLE_KEY) are required. Please check environment variables.');
+    }
+
     const supabase = createServerClient(
-        process.env.NEXT_PUBLIC_SUPABASE_URL!,
-        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+        supabaseUrl,
+        supabaseKey,
         {
             cookies: {
                 getAll() {
