@@ -58,7 +58,7 @@ bun x prisma db push
 ```
 
 ### 4. Seed Database Content
-To populate the database with initial products, categories, and test data, run the main seed script:
+To populate the database with initial products and categories, run the main seed script:
 ```bash
 bun seed-update-all.ts
 ```
