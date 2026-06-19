@@ -1,0 +1,905 @@
+{
+  "Navigation": {
+    "dashboard": "Home",
+    "sales": "POS",
+    "stocktake": "Stock Count",
+    "inventory": "Inventory View",
+    "movements": "Stock In/Out",
+    "products": "Products & Pricing",
+    "invoices": "Invoices",
+    "refunds": "Refunds",
+    "customers": "Customers",
+    "analytics": "Analytics",
+    "profits": "Profits",
+    "staff_sales": "Staff Sales",
+    "logs": "Audit Logs",
+    "users": "Team",
+    "expenses": "Expenses",
+    "incoming": "Incoming Stock",
+    "pricing": "Pricing",
+    "logout": "Logout",
+    "groups": {
+      "overview": "Overview",
+      "sales": "Sales & Finance",
+      "inventory": "Inventory",
+      "management": "Management"
+    },
+    "quick_sale": "Quick Sale",
+    "inventory_count": "Inventory Count",
+    "backup": "Backup Data",
+    "debts": "Debts",
+    "reviews": "Price Reviews",
+    "portfolio": "Portfolio",
+    "reports": "Reports"
+  },
+  "Reports": {
+    "title": "Reports Portal",
+    "subtitle": "Consolidated business metrics, profits, expenses, and staff performance",
+    "tabs": {
+      "analytics": "Analytics",
+      "profits": "Profits & Loss",
+      "expenses": "Expenses",
+      "staff": "Staff Performance"
+    }
+  },
+  "Login": {
+    "title": "Welcome Back",
+    "description": "Sign in to access your dashboard",
+    "emailLabel": "Email Address",
+    "passwordLabel": "Password",
+    "emailPlaceholder": "admin@coffee.dist",
+    "passwordPlaceholder": "••••••••",
+    "submit": "Sign In",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "contactAdmin": "Contact Admin"
+  },
+  "Products": {
+    "title": "Products & Pricing",
+    "subtitle": "Products, Pricing & Stock",
+    "categories": "Categories",
+    "newProduct": "New Product",
+    "allCategories": "All Categories",
+    "searchPlaceholder": "Search products...",
+    "productsCount": "{count} products",
+    "table": {
+      "product": "Product",
+      "sku": "SKU",
+      "category": "Category",
+      "unit": "Unit",
+      "cost": "Cost",
+      "sell": "Sell",
+      "margin": "Margin",
+      "stock": "Stock",
+      "percentTotal": "% Total",
+      "actions": "Actions"
+    },
+    "noProducts": "No products found.",
+    "stockByLocation": "Stock by Location",
+    "modal": {
+      "addTitle": "Add New Product",
+      "editTitle": "Edit Product",
+      "nameLabel": "Product Name",
+      "skuLabel": "SKU",
+      "categoryLabel": "Category",
+      "unitLabel": "Unit",
+      "costLabel": "Cost Price (EGP)",
+      "sellLabel": "Selling Price (EGP)",
+      "openingStock": "Opening Stock",
+      "cancel": "Cancel",
+      "update": "Update",
+      "create": "Create",
+      "selectCategory": "Select Category"
+    },
+    "units": {
+      "piece": "Piece",
+      "kg": "Kilogram",
+      "carton": "Carton",
+      "liter": "Liter"
+    },
+    "manageCategories": {
+      "title": "Manage Categories",
+      "newPlaceholder": "New category name...",
+      "add": "Add",
+      "noCategories": "No categories yet.",
+      "deleteConfirm": "Are you sure you want to delete this category? If it has products, they will also be deleted!"
+    }
+  },
+  "Sales": {
+    "title": "Sales Point",
+    "searchPlaceholder": "Search products by name or SKU...",
+    "allItems": "All items",
+    "loading": "Loading inventory...",
+    "soldOut": "Sold Out",
+    "lowStock": "{count} Left",
+    "priceLabel": "Price",
+    "currency": "EGP",
+    "sidebar": {
+      "title": "Current Order",
+      "cashier": "Cashier",
+      "selectStaff": "Select Staff",
+      "customerPlaceholder": "Add customer (Search by name or phone)",
+      "member": "Member",
+      "newCustomer": "New Customer Entry",
+      "phoneOptional": "Phone (Optional)",
+      "addressOptional": "Address (Optional)",
+      "emptyCart": "Scan or add items to cart",
+      "addNote": "Add note...",
+      "discountPercent": "Disc %",
+      "subtotal": "Subtotal",
+      "discount": "Discount ({percent}%)",
+      "totalDue": "Total Due",
+      "paymentMethods": {
+        "CASH": "Cash",
+        "CREDIT": "Card",
+        "INSTAPAY": "InstaPay"
+      },
+      "amountTendered": "Amount Tendered",
+      "change": "Change: {currency} {amount}",
+      "exact": "Exact",
+      "completeSale": "Complete Sale"
+    },
+    "confirm": {
+      "title": "Confirm Sale",
+      "subtitle": "Review the transaction details before completing.",
+      "items": "Items",
+      "paymentMethod": "Payment Method",
+      "customer": "Customer",
+      "cancel": "Cancel",
+      "confirm": "Confirm Sale"
+    },
+    "errors": {
+      "stockLimit": "Cannot add more {name}. Only {stock} in stock.",
+      "customerRequired": "Please enter a customer name or select an existing customer.",
+      "walkInDebt": "Walk-in customers must pay the full amount. No debt allowed.",
+      "processFailed": "Failed to process sale.",
+      "connectionError": "Connection error. Please check your internet and try again."
+    },
+    "buttons": {
+      "exportPDF": "Export PDF"
+    },
+    "success": {
+      "title": "Sale Complete!",
+      "subtitle": "The invoice has been successfully recorded."
+    }
+  },
+  "Stocktake": {
+    "title": "Stock Count",
+    "subtitle": "Reconcile physical inventory",
+    "refresh": "Refresh",
+    "saving": "Saving...",
+    "submit": "Submit {count} Adjustment{plural, select, one {} other {s}}",
+    "searchPlaceholder": "Search products...",
+    "filterAll": "All Categories",
+    "table": {
+      "product": "Product",
+      "category": "Category",
+      "systemStock": "System Stock",
+      "actualCount": "Actual Count",
+      "diff": "Diff",
+      "modified": "Modified",
+      "loading": "Loading inventory...",
+      "noResults": "No products found."
+    },
+    "confirmMessage": "You are about to reconcile {count} items. This will update inventory levels. Continue?",
+    "success": "Stock reconciled successfully!",
+    "error": "Failed to reconcile stock",
+    "tabView": "Inventory List",
+    "tabCount": "Physical Count",
+    "exportCSV": "Export CSV",
+    "statsProducts": "Products",
+    "statsUnits": "Stock Units",
+    "statsValueRetail": "Value (Retail)",
+    "statsValueCost": "Value (Cost)",
+    "tapToReveal": "Tap to reveal",
+    "sortBy": "Sort By",
+    "sortName": "Name (A-Z)",
+    "sortStockAsc": "Stock (Low to High)",
+    "sortStockDesc": "Stock (High to Low)",
+    "sortPriceAsc": "Price (Low to High)",
+    "sortPriceDesc": "Price (High to Low)",
+    "locations": "Locations",
+    "noProducts": "No products found",
+    "adjustFilters": "Try adjusting your search or filters.",
+    "searchProductSku": "Search by name or SKU..."
+  },
+  "Expenses": {
+    "title": "Expenses",
+    "subtitle": "Expenses & Salary Tracking",
+    "metrics": {
+      "totalSpend": "Total Spend",
+      "salaryTotal": "Salary Total",
+      "otherExpenses": "Other Expenses",
+      "salaryPercent": "Salary %"
+    },
+    "categories": {
+      "ALL": "All Categories",
+      "SALARY": "Salaries Only",
+      "OTHER": "Non-Salary Only"
+    },
+  "buttons": {
+    "salaryPdf": "Salary PDF",
+    "newExpense": "New Expense",
+    "cancel": "Cancel",
+    "previous": "Previous",
+    "next": "Next",
+    "clear": "Clear"
+  },
+  "search": {
+    "placeholder": "Search description..."
+  },
+  "breakdown": {
+    "title": "Category Breakdown",
+    "subtitle": "Totals per category for the selected period",
+    "category": "Category",
+    "count": "Entries",
+    "total": "Total",
+    "share": "Share",
+    "empty": "No expenses recorded in this period."
+  },
+  "delete": {
+    "title": "Delete Expense",
+    "confirm": "Delete",
+    "loading": "Deleting..."
+  },
+  "form": {
+    "title": "Add New Expense",
+    "description": "Description",
+    "descriptionPlaceholder": "Make coffee, electricity...",
+    "amount": "Amount ({currency})",
+    "whoSpent": "Who Spent?",
+    "selectStaff": "Select Staff...",
+    "category": "Category",
+    "selectCategory": "Select Category...",
+    "date": "Date",
+    "save": "Save Expense",
+    "saving": "Saving...",
+    "cancel": "Cancel"
+  },
+  "table": {
+    "date": "Date",
+    "description": "Description",
+    "category": "Category",
+    "spentBy": "Spent By",
+    "amount": "Amount",
+    "actions": "Actions",
+    "loading": "Loading expenses...",
+    "noResults": "No expenses found for this period.",
+    "noCategory": "Uncategorized",
+    "pageInfo": "Page {current} of {total}"
+  },
+    "categoriesList": {
+      "SALARY": "Salary",
+      "Utilities": "Utilities",
+      "Supplies": "Supplies",
+      "Maintenance": "Maintenance",
+      "Other": "Other"
+    },
+    "alerts": {
+      "createFailed": "Failed to create expense",
+      "deleteConfirm": "Are you sure you want to delete this expense?",
+      "selectDateRange": "Please select a date range first to generate salary report.",
+      "reportFailed": "Failed to generate report"
+    },
+    "report": {
+      "title": "Salary Expense Report",
+      "period": "Period: {start} to {end}",
+      "totalSalaries": "Total Salaries",
+      "employees": "Employees"
+    },
+    "monthly": {
+      "title": "Monthly Summary",
+      "grandTotal": "Annual Grand Total"
+    }
+  },
+  "Invoices": {
+    "title": "Invoices",
+    "dateRange": "Date Range",
+    "exportReport": "Export Report",
+    "searchPlaceholder": "Search invoice # or customer...",
+    "from": "From:",
+    "to": "To:",
+    "clearFilter": "Clear Filter",
+    "loading": "Loading invoices...",
+    "noResults": "No invoices found.",
+    "walkInCustomer": "Walk-in Customer",
+    "paid": "Paid",
+    "statusPending": "Pending",
+    "statusDeclined": "Declined",
+    "statusDebt": "Debt",
+    "printTooltip": "Print / Download PDF",
+    "details": {
+      "title": "Invoice Details",
+      "date": "Date & Time",
+      "payment": "Payment",
+      "status": "Status",
+      "id": "Invoice #",
+      "salesperson": "Salesperson (Recorded By)",
+      "buyerInfo": "Buyer Information",
+      "name": "Name",
+      "username": "Username",
+      "phone": "Phone",
+      "address": "Address",
+      "orderItems": "Order Items",
+      "item": "Item",
+      "qty": "Qty",
+      "price": "Price",
+      "subtotal": "Subtotal",
+      "grandTotal": "GRAND TOTAL",
+      "previousBalance": "Previous Balance",
+      "net": "Net",
+      "received": "Received",
+      "currentBalance": "Current Balance",
+      "actions": "Actions",
+      "quickPrint": "Quick Print",
+      "officialInvoice": "Official Invoice (فاتورة)",
+      "close": "Close",
+      "refund": "Process Item Refund",
+      "editOrder": "Edit Order",
+      "saveChanges": "Save Changes",
+      "saving": "Saving...",
+      "cancelEdit": "Cancel Edit",
+      "editWarning": "Editing will adjust inventory and revenue.",
+      "amountPaid": "Amount Paid",
+      "undoOrder": "Undo Invoice"
+    },
+    "errors": {
+      "updateFailed": "Failed to update invoice."
+    },
+    "success": {
+      "updated": "Invoice updated successfully."
+    },
+    "report": {
+      "title": "Invoices Report",
+      "generatedOn": "Generated on {date}",
+      "period": "Period: {start} to {end}",
+      "total": "TOTAL"
+    },
+    "downloadZip": "Download ZIP"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "user": "User"
+  },
+  "Customers": {
+    "title": "Customers",
+    "subtitle": "Manage and analyze your customer base",
+    "searchPlaceholder": "Search by name or phone...",
+    "addCustomer": "Add Customer",
+    "editCustomer": "Edit",
+    "deleteCustomer": "Delete",
+    "stats": {
+      "totalCustomers": "Total Customers",
+      "withDebt": "With Outstanding Debt",
+      "totalOwed": "Total Owed"
+    },
+    "loading": "Fetching customer intelligence...",
+    "card": {
+      "owes": "Owes {currency} {amount}",
+      "settled": "Settled",
+      "noPhone": "No phone",
+      "noAddress": "No address on file",
+      "historyAvailable": "History Available",
+      "viewProfile": "View Full Profile Ledger"
+    },
+    "empty": {
+      "title": "No customers found",
+      "description": "Try searching with a different name or phone number"
+    },
+    "modal": {
+      "title": "New Customer",
+      "description": "Add a new customer to your database",
+      "nameLabel": "Customer Name *",
+      "namePlaceholder": "e.g. Ahmed Mohamed",
+      "phoneLabel": "Phone (Optional)",
+      "phonePlaceholder": "e.g. 01012345678",
+      "addressLabel": "Address (Optional)",
+      "addressPlaceholder": "e.g. Cairo, Egypt",
+      "governorateLabel": "Governorate (Optional)",
+      "governoratePlaceholder": "e.g. Cairo",
+      "cancel": "Cancel",
+      "create": "Create Customer",
+      "creating": "Creating..."
+    },
+    "editModal": {
+      "title": "Edit Customer",
+      "description": "Update customer details. Changes will apply everywhere.",
+      "save": "Save Changes",
+      "saving": "Saving..."
+    },
+    "deleteConfirm": {
+      "title": "Delete Customer",
+      "message": "Are you sure you want to permanently delete this customer?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Yes, Delete",
+      "cancel": "Cancel",
+      "deleting": "Deleting..."
+    },
+    "errors": {
+      "nameRequired": "Customer name is required.",
+      "createFailed": "Failed to create customer.",
+      "updateFailed": "Failed to update customer.",
+      "deleteFailed": "Failed to delete customer.",
+      "hasInvoices": "Cannot delete: customer has existing invoices."
+    },
+    "success": {
+      "updated": "Customer updated successfully.",
+      "deleted": "Customer deleted successfully."
+    },
+    "paymentModal": {
+      "title": "Record Payment",
+      "description": "Record a payment from the customer to settle debt",
+      "customer": "Customer",
+      "currentBalance": "Current Balance",
+      "amountLabel": "Amount Paid",
+      "noteLabel": "Note (Optional)",
+      "notePlaceholder": "Note about this payment...",
+      "amountRequired": "Amount must be greater than zero.",
+      "failed": "Failed to record payment.",
+      "cancel": "Cancel",
+      "confirm": "Record Payment",
+      "recordPayment": "Record Payment"
+    }
+  },
+  "Analytics": {
+    "title": "Analytics",
+    "subtitle": "Detailed reports and insights",
+    "exportReport": "Export Report",
+    "tabs": {
+      "topBuyers": "Top Buyers",
+      "topProducts": "Top Products"
+    },
+    "loading": "Loading data...",
+    "buyers": {
+      "totalCustomers": "Total Customers",
+      "totalSalesValue": "Total Sales Value",
+      "table": {
+        "rank": "Rank",
+        "customer": "Customer Details",
+        "address": "Address",
+        "frequency": "Frequency",
+        "contribution": "Contribution",
+        "visits": "visits",
+        "history": "Purchase History",
+        "units": "units"
+      },
+      "empty": "No historical data found for the selected period."
+    },
+    "products": {
+      "uniqueProducts": "Unique Products Sold",
+      "totalUnits": "Total Units Sold",
+      "items": "Items",
+      "table": {
+        "rank": "Rank",
+        "product": "Product Info",
+        "quantity": "Quantity Sold",
+        "revenue": "Est. Revenue",
+        "units": "Units"
+      },
+      "empty": "No products sold in the selected time range."
+    },
+    "report": {
+      "buyersTitle": "Top Buyers Report",
+      "productsTitle": "Top Selling Products",
+      "period": "Period: {start} to {end}"
+    }
+  },
+  "Profits": {
+    "title": "Profits",
+    "subtitle": "Profit & Loss Overview",
+    "dateRange": "Date Range",
+    "clearFilter": "Clear Filter",
+    "from": "From:",
+    "to": "To:",
+    "stats": {
+      "totalRevenue": "Total Revenue",
+      "estimatedCost": "Estimated Cost",
+      "totalExpenses": "Total Expenses",
+      "netProfit": "Net Profit ({margin}%)"
+    },
+    "recentSales": "Recent Sales",
+    "customer": "Customer",
+    "loading": "Loading..."
+  },
+  "StaffSales": {
+    "title": "Staff Sales",
+    "subtitle": "Performance Tracking",
+    "table": {
+      "rank": "Rank",
+      "staff": "Staff Member",
+      "phone": "Phone",
+      "transactions": "Transactions",
+      "totalSales": "Total Sales ({currency})",
+      "actions": "Actions"
+    },
+    "periods": {
+      "day": "Today",
+      "week": "This Week",
+      "month": "This Month",
+      "2months": "2 Months",
+      "6months": "6 Months",
+      "all": "All Time"
+    },
+    "buttons": {
+      "exportPDF": "Export PDF",
+      "viewDetails": "View Details"
+    },
+    "modal": {
+      "transactions": "Transactions",
+      "totalSales": "Total Sales",
+      "date": "Date",
+      "customer": "Customer",
+      "amount": "Amount",
+      "noSales": "No sales in this period."
+    },
+    "loading": "Loading staff data...",
+    "empty": "No staff members found.",
+    "report": {
+      "title": "Staff Sales Report",
+      "generated": "Generated:",
+      "phone": "Phone:",
+      "period": "Period:"
+    }
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "subtitle": "Price Management & Margins",
+    "bulkUpdate": "Bulk Update",
+    "table": {
+      "product": "Product",
+      "cost": "Cost ({currency})",
+      "selling": "Selling ({currency})",
+      "margin": "Margin",
+      "actions": "Actions",
+      "loading": "Loading pricing data...",
+      "noResults": "No products found."
+    }
+  },
+  "Users": {
+    "title": "Staff & Permissions",
+    "subtitle": "Manage your team access and security levels.",
+    "addMember": "Onboard Staff",
+    "table": {
+      "employee": "Staff Member",
+      "contact": "Contact Info",
+      "role": "Access Level",
+      "joined": "Hiring Date",
+      "actions": "Control",
+      "anonymous": "Unknown Staff",
+      "loading": "Retrieving team directory...",
+      "viewActivity": "Audit Activity",
+      "edit": "Modify Profile",
+      "delete": "Remove Access"
+    },
+    "modal": {
+      "createTitle": "Onboard New Staff Member",
+      "editTitle": "Modify Staff Access",
+      "fullName": "Full Name",
+      "username": "System Handle",
+      "email": "Business Email",
+      "password": "Security Password",
+      "phone": "Mobile Number",
+      "address": "Resident Address",
+      "role": "System Role",
+      "customPermissions": "Enable Custom Override",
+      "pagePermissions": "Module Permissions",
+      "defaultPermissions": "Using default {role} permission set.",
+      "cancel": "Discard",
+      "create": "Confirm Onboarding",
+      "update": "Save Access Changes",
+      "rootWarning": "Root permissions are reserved for system owners."
+    },
+    "roles": {
+      "SALESPERSON": "Store Associate",
+      "ACCOUNTANT": "Financial Controller",
+      "ADMIN": "Administrator",
+      "READ_ONLY": "Viewer",
+      "ROOT": "Root Owner"
+    },
+    "permissions": {
+      "dashboard": "Home",
+      "sales": "POS",
+      "stocktake": "Stock Count",
+      "inventory": "Inventory",
+      "movements": "Stock In/Out",
+      "products": "Products & Pricing",
+      "invoices": "Invoices",
+      "customers": "Customers",
+      "reports": "Reports",
+      "review": "Price Reviews",
+      "portfolio": "Portfolio",
+      "logs": "Audit Logs",
+      "users": "Team",
+      "debts": "Debts",
+      "backup": "Backup Data"
+    },
+    "alerts": {
+      "deleteConfirm": "Are you absolutely sure? This will permanently revoke all access for this user.",
+      "updateFailed": "System error: Failed to sync access changes.",
+      "createFailed": "System error: Could not complete staff onboarding."
+    }
+  },
+  "Home": {
+    "title": "Control Center",
+    "subtitle": "Real-time metrics and system health",
+    "metrics": {
+      "totalRevenue": "Total Revenue",
+      "salesCount": "Sales Count",
+      "inventoryValue": "Inventory Value",
+      "activeCustomers": "Active Customers",
+      "salesToday": "Sales Today",
+      "activeVehicles": "Active Vehicles",
+      "lifetime": "Lifetime Record",
+      "totalStock": "Current Inventory",
+      "fromMidnight": "From midnight",
+      "onTheRoad": "Active Fleet"
+    },
+    "actions": {
+      "newSale": "New Sale",
+      "openPos": "Open POS Terminal",
+      "addStock": "Add Stock",
+      "purchaseOrder": "Register Procurement"
+    },
+    "sections": {
+      "salesRevenue": "Sales Performance",
+      "recentSales": "Recent Sales Activity",
+      "lowStock": "Low Stock Alerts",
+      "systemActivity": "Security & Activity Feed",
+      "viewAll": "View History",
+      "noRecentSales": "No recent sales found.",
+      "noActivity": "No recent system activity recorded.",
+      "salesLegend": "Revenue"
+    }
+  },
+  "CustomerProfile": {
+    "loading": "Fetching profile details...",
+    "notFound": "Customer profile not found.",
+    "backButton": "Back to Customers",
+    "printStatement": "Print Account Statement",
+    "accountType": {
+      "USER": "Customer",
+      "ROOT": "System Root",
+      "INDIVIDUAL": "Individual",
+      "GROUP_MEMBER": "Group Member"
+    },
+    "profile": {
+      "noPhone": "No phone recorded",
+      "noAddress": "No address recorded",
+      "joinedLabel": "Client Since",
+      "na": "N/A",
+      "lifetimeValue": "Lifetime Spend",
+      "currentBalance": "Current Balance"
+    },
+    "history": {
+      "title": "Purchase History",
+      "invoiceNumber": "Invoice #{number}",
+      "status": {
+        "completed": "Completed"
+      },
+      "seller": "By {name}",
+      "paid": "Paid {currency} {amount}",
+      "due": "Due {currency} {amount}",
+      "itemsTitle": "Purchased Items",
+      "viewOriginal": "View Original Invoice",
+      "empty": "No purchase history found for this customer."
+    },
+    "report": {
+      "watermark": "STASH",
+      "title": "Statement of Account",
+      "customerName": "Customer Name",
+      "date": "Date",
+      "phone": "Phone",
+      "address": "Address",
+      "na": "N/A",
+      "table": {
+        "index": "#",
+        "date": "Date",
+        "type": "Type",
+        "description": "Description",
+        "invoice": "Invoice ID",
+        "total": "Total",
+        "paid": "Paid",
+        "debit": "Debit",
+        "credit": "Credit",
+        "balance": "Balance"
+      },
+      "totalPurchases": "Total Purchases",
+      "totalPayments": "Total Payments",
+      "totalDue": "Total Due Balance"
+    },
+    "statement": {
+      "title": "Account Statement",
+      "colDate": "Date",
+      "colType": "Type",
+      "colDescription": "Description",
+      "colDebit": "Debit",
+      "colCredit": "Credit",
+      "colBalance": "Balance",
+      "typeInvoice": "Invoice",
+      "typePayment": "Payment",
+      "recordedBy": "By {name}",
+      "finalBalance": "Final Balance",
+      "empty": "No transactions found for this customer."
+    }
+  },
+  "Refunds": {
+    "title": "Returns & Refunds",
+    "subtitle": "Track and manage returned products.",
+    "buttons": {
+      "filterDate": "Filter by Date",
+      "refresh": "Refresh History",
+      "reset": "Reset Filters",
+      "viewInvoice": "View Original Invoice",
+      "closeMemo": "Close Details"
+    },
+    "filters": {
+      "search": "Search by Invoice, Customer, or Reason...",
+      "from": "From Date",
+      "to": "To Date"
+    },
+    "list": {
+      "loading": "Loading refund history...",
+      "empty": "No refunds found matching your criteria.",
+      "walkIn": "Walk-in Customer",
+      "withReason": "Reason Attached",
+      "invoice": "Invoice",
+      "itemsRefunded": "{count} Items Refunded"
+    },
+    "modal": {
+      "title": "Refund Receipt Details",
+      "staff": "Processed By",
+      "customer": "Customer",
+      "date": "Refund Date",
+      "reasonTitle": "Return Reason",
+      "noReason": "No reason provided for this refund.",
+      "returnedItems": "Returned Inventory Items",
+      "financialReversal": "Financial Reversal",
+      "itemDetails": "Item Details",
+      "condition": "Condition",
+      "quantity": "Qty",
+      "price": "Unit Price",
+      "total": "Subtotal",
+      "conditions": {
+        "NEW": "Restock",
+        "DAMAGED": "Defective"
+      },
+      "grandTotal": "Total Amount Refunded"
+    }
+  },
+  "Movements": {
+    "title": "Stock Movements",
+    "subtitle": "Track audit trail of inventory flow.",
+    "refresh": "Refresh Log",
+    "empty": "No stock movements recorded.",
+    "filters": {
+      "all": "All Types",
+      "sale": "Sales",
+      "in": "Stock In",
+      "out": "Stock Out",
+      "transfer": "Transfers"
+    },
+    "types": {
+      "SALE": "Product Sale",
+      "IN": "Inventory Addition",
+      "OUT": "Inventory Removal",
+      "TRANSFER": "Warehouse Transfer",
+      "RETURN": "Customer Return"
+    },
+    "labels": {
+      "by": "Managed by",
+      "from": "From",
+      "to": "To",
+      "unknown": "System / Vendor"
+    },
+    "pagination": {
+      "prev": "Previous",
+      "next": "Next",
+      "status": "Page {page} of {total}"
+    }
+  },
+  "Logs": {
+    "title": "System Audit Logs",
+    "subtitle": "Security and activity tracking.",
+    "refresh": "Refresh Logs",
+    "empty": "No audit logs found.",
+    "filters": {
+      "user": "Filter User:",
+      "allUsers": "All Staff Members",
+      "clear": "Clear Filter"
+    },
+    "table": {
+      "action": "Action",
+      "status": "Status",
+      "details": "Activity Details",
+      "reason": "Error/Reason",
+      "user": "Staff Name",
+      "email": "Username",
+      "time": "Timestamp"
+    },
+    "status": {
+      "success": "Success",
+      "failed": "Failed"
+    },
+    "pagination": {
+      "status": "Showing page {page} of {total} ({count} total logs)"
+    }
+  },
+  "Incoming": {
+    "title": "Stock Procurement",
+    "newOrder": "New Purchase Record",
+    "metrics": {
+      "totalShipments": "Total Shipments",
+      "records": "{count} Records"
+    },
+    "table": {
+      "product": "Product Name",
+      "quantity": "Quantity",
+      "supplier": "Supplier / Source",
+      "totalCost": "Total Cost",
+      "date": "Received Date",
+      "status": "Status",
+      "loading": "Loading procurement data...",
+      "empty": "No incoming stock recorded.",
+      "emptyDescription": "Start by adding your first procurement record.",
+      "statuses": {
+        "pending": "Pending",
+        "received": "Received",
+        "rejected": "Rejected"
+      }
+    },
+    "modal": {
+      "title": "Register Incoming Stock",
+      "product": "Select Product",
+      "chooseItem": "Choose an item...",
+      "quantity": "Received Quantity",
+      "location": "Destination Location",
+      "selectBranch": "Select branch...",
+      "notes": "Transaction Notes",
+      "notesPlaceholder": "Add details about supplier or shipment...",
+      "cancel": "Discard",
+      "add": "Confirm Receipt"
+    },
+    "alerts": {
+      "failed": "Failed to add purchase record. Please try again."
+    }
+  },
+  "Reviews": {
+    "pending": "Pending Review",
+    "accepted": "Accepted",
+    "declined": "Declined",
+    "empty": "No invoices pending review",
+    "walkIn": "Walk-in Customer",
+    "priceChanges": "Price Changes Detected",
+    "basePrice": "Base Price",
+    "overridePrice": "Override Price",
+    "deviation": "Deviation",
+    "accept": "Accept",
+    "decline": "Decline",
+    "edit": "Edit",
+    "declineTitle": "Decline Invoice",
+    "declineReasonPlaceholder": "Optional: Add a reason for declining...",
+    "cancel": "Cancel",
+    "confirmDecline": "Confirm Decline"
+  },
+  "Portfolio": {
+    "filterAll": "All Statuses",
+    "statusAccepted": "Accepted",
+    "statusPending": "Pending",
+    "statusDeclined": "Declined",
+    "periodAll": "All Time",
+    "periodDay": "Today",
+    "periodWeek": "This Week",
+    "periodMonth": "This Month",
+    "totalInvoices": "Total Invoices",
+    "acceptedTotal": "Accepted Total",
+    "pendingCount": "Pending",
+    "declinedCount": "Declined",
+    "empty": "No invoices found for this salesperson",
+    "walkIn": "Walk-in Customer",
+    "reviewedBy": "Reviewed by",
+    "revisedBadge": "Revised",
+    "revisedFrom": "Revised from invoice",
+    "revisedTo": "Replaced by invoice",
+    "declineReason": "Decline reason"
+  }
+}

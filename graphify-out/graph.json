@@ -1,0 +1,2477 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "db_seeding_helpers",
+        "label": "Database Seeding Helpers",
+        "nodes": [
+          "seed_update_all_ensureproduct",
+          "seed_update_all_ensurecategory",
+          "seed_update_all_addinventory"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "seed-update-all.ts"
+      },
+      {
+        "id": "dashboard_views",
+        "label": "Dashboard Views",
+        "nodes": [
+          "movements_page_movementspage",
+          "pricing_page_pricingpage",
+          "products_page_productspage",
+          "profits_page_profitspage",
+          "refunds_page_refundhistorypage",
+          "sales_page_salespage",
+          "quick_page_quickpage",
+          "staff_sales_page_staffsalespage",
+          "stocktake_page_stocktakepage",
+          "users_page_userspage"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.95,
+        "source_file": "src/app/[locale]/(dashboard)/movements/page.tsx"
+      },
+      {
+        "id": "telegram_bot_flow",
+        "label": "Telegram Bot Flow",
+        "nodes": [
+          "services_telegram_handlers_handletelegramupdate",
+          "services_telegram_handlers_processsalefrombot",
+          "services_telegram_state_salestate",
+          "services_telegram_sendmessage"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "src/lib/services/telegram-handlers.ts"
+      },
+      {
+        "id": "invoice_generation_concept",
+        "label": "Invoice Generation & Display",
+        "nodes": [
+          "services_pdf_generator_generateinvoicepdfbuffer",
+          "public_invoice_sacho_html",
+          "tests_pos_spec_pos_pointofsale"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "src/lib/services/pdf-generator.ts"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "LocaleLayout",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/layout.tsx",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "locale_layout_localelayout",
+      "community": 62,
+      "norm_label": "localelayout"
+    },
+    {
+      "label": "Home",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/page.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "locale_page_home",
+      "community": 63,
+      "norm_label": "home"
+    },
+    {
+      "label": "getBuyerReport",
+      "file_type": "code",
+      "source_file": "src/app/actions/analytics.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "actions_analytics_getbuyerreport",
+      "community": 20,
+      "norm_label": "getbuyerreport"
+    },
+    {
+      "label": "getProductReport",
+      "file_type": "code",
+      "source_file": "src/app/actions/analytics.ts",
+      "source_location": "L112",
+      "_origin": "ast",
+      "id": "actions_analytics_getproductreport",
+      "community": 21,
+      "norm_label": "getproductreport"
+    },
+    {
+      "label": "logActivity",
+      "file_type": "code",
+      "source_file": "src/app/actions/audit.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_audit_logactivity",
+      "community": 23,
+      "norm_label": "logactivity"
+    },
+    {
+      "label": "getAuditLogs",
+      "file_type": "code",
+      "source_file": "src/app/actions/audit.ts",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "actions_audit_getauditlogs",
+      "community": 22,
+      "norm_label": "getauditlogs"
+    },
+    {
+      "label": "getCurrentUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/auth.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "actions_auth_getcurrentuser",
+      "community": 24,
+      "norm_label": "getcurrentuser"
+    },
+    {
+      "label": "signOut",
+      "file_type": "code",
+      "source_file": "src/app/actions/auth.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "actions_auth_signout",
+      "community": 26,
+      "norm_label": "signout"
+    },
+    {
+      "label": "login",
+      "file_type": "code",
+      "source_file": "src/app/actions/auth.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "actions_auth_login",
+      "community": 25,
+      "norm_label": "login"
+    },
+    {
+      "label": "searchCustomers",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_customers_searchcustomers",
+      "community": 31,
+      "norm_label": "searchcustomers"
+    },
+    {
+      "label": "getCustomersList",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "actions_customers_getcustomerslist",
+      "community": 30,
+      "norm_label": "getcustomerslist"
+    },
+    {
+      "label": "getCustomerProfile",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "actions_customers_getcustomerprofile",
+      "community": 29,
+      "norm_label": "getcustomerprofile"
+    },
+    {
+      "label": "createCustomer",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L100",
+      "_origin": "ast",
+      "id": "actions_customers_createcustomer",
+      "community": 27,
+      "norm_label": "createcustomer"
+    },
+    {
+      "label": "updateCustomer",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "actions_customers_updatecustomer",
+      "community": 32,
+      "norm_label": "updatecustomer"
+    },
+    {
+      "label": "deleteCustomer",
+      "file_type": "code",
+      "source_file": "src/app/actions/customers.ts",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "actions_customers_deletecustomer",
+      "community": 28,
+      "norm_label": "deletecustomer"
+    },
+    {
+      "label": "getDashboardStats",
+      "file_type": "code",
+      "source_file": "src/app/actions/dashboard.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "actions_dashboard_getdashboardstats",
+      "community": 33,
+      "norm_label": "getdashboardstats"
+    },
+    {
+      "label": "getDebts",
+      "file_type": "code",
+      "source_file": "src/app/actions/debts.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "actions_debts_getdebts",
+      "community": 34,
+      "norm_label": "getdebts"
+    },
+    {
+      "label": "createExpense",
+      "file_type": "code",
+      "source_file": "src/app/actions/expenses.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "actions_expenses_createexpense",
+      "community": 35,
+      "norm_label": "createexpense"
+    },
+    {
+      "label": "getExpenses",
+      "file_type": "code",
+      "source_file": "src/app/actions/expenses.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "actions_expenses_getexpenses",
+      "community": 37,
+      "norm_label": "getexpenses"
+    },
+    {
+      "label": "getSalaryReport",
+      "file_type": "code",
+      "source_file": "src/app/actions/expenses.ts",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "actions_expenses_getsalaryreport",
+      "community": 38,
+      "norm_label": "getsalaryreport"
+    },
+    {
+      "label": "deleteExpense",
+      "file_type": "code",
+      "source_file": "src/app/actions/expenses.ts",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "actions_expenses_deleteexpense",
+      "community": 36,
+      "norm_label": "deleteexpense"
+    },
+    {
+      "label": "getIncomingTransactions",
+      "file_type": "code",
+      "source_file": "src/app/actions/incoming.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_incoming_getincomingtransactions",
+      "community": 40,
+      "norm_label": "getincomingtransactions"
+    },
+    {
+      "label": "getLocations",
+      "file_type": "code",
+      "source_file": "src/app/actions/incoming.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "actions_incoming_getlocations",
+      "community": 41,
+      "norm_label": "getlocations"
+    },
+    {
+      "label": "createIncomingStock",
+      "file_type": "code",
+      "source_file": "src/app/actions/incoming.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "actions_incoming_createincomingstock",
+      "community": 39,
+      "norm_label": "createincomingstock"
+    },
+    {
+      "label": "getInventory",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_inventory_getinventory",
+      "community": 47,
+      "norm_label": "getinventory"
+    },
+    {
+      "label": "getCategories",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "actions_inventory_getcategories",
+      "community": 46,
+      "norm_label": "getcategories"
+    },
+    {
+      "label": "createCategory",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "actions_inventory_createcategory",
+      "community": 42,
+      "norm_label": "createcategory"
+    },
+    {
+      "label": "deleteCategory",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "actions_inventory_deletecategory",
+      "community": 44,
+      "norm_label": "deletecategory"
+    },
+    {
+      "label": "createProduct",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "actions_inventory_createproduct",
+      "community": 43,
+      "norm_label": "createproduct"
+    },
+    {
+      "label": "getUnifiedProducts",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "actions_inventory_getunifiedproducts",
+      "community": 48,
+      "norm_label": "getunifiedproducts"
+    },
+    {
+      "label": "updateProduct",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "actions_inventory_updateproduct",
+      "community": 49,
+      "norm_label": "updateproduct"
+    },
+    {
+      "label": "deleteProduct",
+      "file_type": "code",
+      "source_file": "src/app/actions/inventory.ts",
+      "source_location": "L337",
+      "_origin": "ast",
+      "id": "actions_inventory_deleteproduct",
+      "community": 45,
+      "norm_label": "deleteproduct"
+    },
+    {
+      "label": "getInvoices",
+      "file_type": "code",
+      "source_file": "src/app/actions/invoices.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "actions_invoices_getinvoices",
+      "community": 51,
+      "norm_label": "getinvoices"
+    },
+    {
+      "label": "getInvoiceById",
+      "file_type": "code",
+      "source_file": "src/app/actions/invoices.ts",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "actions_invoices_getinvoicebyid",
+      "community": 50,
+      "norm_label": "getinvoicebyid"
+    },
+    {
+      "label": "updateInvoice",
+      "file_type": "code",
+      "source_file": "src/app/actions/invoices.ts",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "actions_invoices_updateinvoice",
+      "community": 53,
+      "norm_label": "updateinvoice"
+    },
+    {
+      "label": "undoInvoice",
+      "file_type": "code",
+      "source_file": "src/app/actions/invoices.ts",
+      "source_location": "L278",
+      "_origin": "ast",
+      "id": "actions_invoices_undoinvoice",
+      "community": 52,
+      "norm_label": "undoinvoice"
+    },
+    {
+      "label": "getPayrollReport",
+      "file_type": "code",
+      "source_file": "src/app/actions/payroll.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "actions_payroll_getpayrollreport",
+      "community": 54,
+      "norm_label": "getpayrollreport"
+    },
+    {
+      "label": "getCurrentUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/permissions.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "actions_permissions_getcurrentuser",
+      "community": 55,
+      "norm_label": "getcurrentuser"
+    },
+    {
+      "label": "getMenuItemsForUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/permissions.ts",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "actions_permissions_getmenuitemsforuser",
+      "community": 56,
+      "norm_label": "getmenuitemsforuser"
+    },
+    {
+      "label": "createRefund",
+      "file_type": "code",
+      "source_file": "src/app/actions/refunds.ts",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "actions_refunds_createrefund",
+      "community": 2,
+      "norm_label": "createrefund"
+    },
+    {
+      "label": "getRefunds",
+      "file_type": "code",
+      "source_file": "src/app/actions/refunds.ts",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "actions_refunds_getrefunds",
+      "community": 0,
+      "norm_label": "getrefunds"
+    },
+    {
+      "label": "getProducts",
+      "file_type": "code",
+      "source_file": "src/app/actions/sales.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "actions_sales_getproducts",
+      "community": 0,
+      "norm_label": "getproducts"
+    },
+    {
+      "label": "getCategories",
+      "file_type": "code",
+      "source_file": "src/app/actions/sales.ts",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "actions_sales_getcategories",
+      "community": 0,
+      "norm_label": "getcategories"
+    },
+    {
+      "label": "getStaffList",
+      "file_type": "code",
+      "source_file": "src/app/actions/sales.ts",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "actions_sales_getstafflist",
+      "community": 0,
+      "norm_label": "getstafflist"
+    },
+    {
+      "label": "processSale",
+      "file_type": "code",
+      "source_file": "src/app/actions/sales.ts",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "actions_sales_processsale",
+      "community": 1,
+      "norm_label": "processsale"
+    },
+    {
+      "label": "getStaffList",
+      "file_type": "code",
+      "source_file": "src/app/actions/staff.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_staff_getstafflist",
+      "community": 0,
+      "norm_label": "getstafflist"
+    },
+    {
+      "label": "getStaffSalesDetail",
+      "file_type": "code",
+      "source_file": "src/app/actions/staff.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "actions_staff_getstaffsalesdetail",
+      "community": 0,
+      "norm_label": "getstaffsalesdetail"
+    },
+    {
+      "label": "getStocktakeItems",
+      "file_type": "code",
+      "source_file": "src/app/actions/stocktake.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_stocktake_getstocktakeitems",
+      "community": 0,
+      "norm_label": "getstocktakeitems"
+    },
+    {
+      "label": "StockAdjustment",
+      "file_type": "code",
+      "source_file": "src/app/actions/stocktake.ts",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "actions_stocktake_stockadjustment",
+      "community": 57,
+      "norm_label": "stockadjustment"
+    },
+    {
+      "label": "reconcileStock",
+      "file_type": "code",
+      "source_file": "src/app/actions/stocktake.ts",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "actions_stocktake_reconcilestock",
+      "community": 0,
+      "norm_label": "reconcilestock"
+    },
+    {
+      "label": "getStockMovements",
+      "file_type": "code",
+      "source_file": "src/app/actions/transactions.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "actions_transactions_getstockmovements",
+      "community": 0,
+      "norm_label": "getstockmovements"
+    },
+    {
+      "label": "getUsers",
+      "file_type": "code",
+      "source_file": "src/app/actions/users.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "actions_users_getusers",
+      "community": 0,
+      "norm_label": "getusers"
+    },
+    {
+      "label": "deleteUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/users.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "actions_users_deleteuser",
+      "community": 0,
+      "norm_label": "deleteuser"
+    },
+    {
+      "label": "createUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/users.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "actions_users_createuser",
+      "community": 0,
+      "norm_label": "createuser"
+    },
+    {
+      "label": "updateUser",
+      "file_type": "code",
+      "source_file": "src/app/actions/users.ts",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "actions_users_updateuser",
+      "community": 0,
+      "norm_label": "updateuser"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/cron/backup/route.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "backup_route_get",
+      "community": 0,
+      "norm_label": "get"
+    },
+    {
+      "label": "POST",
+      "file_type": "code",
+      "source_file": "src/app/api/customers/bulk/route.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "bulk_route_post",
+      "community": 0,
+      "norm_label": "post"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/exports/route.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "exports_route_get",
+      "community": 0,
+      "norm_label": "get"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/invoices/[id]/pdf/route.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "src_app_api_invoices_id_pdf_route_ts_pdf_route_get",
+      "community": 99,
+      "norm_label": "get"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/reports/debts/route.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "debts_route_get",
+      "community": 0,
+      "norm_label": "get"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/reports/inventory/pdf/route.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "src_app_api_reports_inventory_pdf_route_ts_pdf_route_get",
+      "community": 100,
+      "norm_label": "get"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/reports/inventory/route.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "inventory_route_get",
+      "community": 0,
+      "norm_label": "get"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/telegram/setup/route.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "setup_route_get",
+      "community": 98,
+      "norm_label": "get"
+    },
+    {
+      "label": "POST",
+      "file_type": "code",
+      "source_file": "src/app/api/telegram/webhook/route.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "webhook_route_post",
+      "community": 109,
+      "norm_label": "post"
+    },
+    {
+      "label": "RootLayout",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "app_layout_rootlayout",
+      "community": 58,
+      "norm_label": "rootlayout"
+    },
+    {
+      "label": "getDefaultPermissions",
+      "file_type": "code",
+      "source_file": "src/lib/permissions.ts",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "lib_permissions_getdefaultpermissions",
+      "community": 11,
+      "norm_label": "getdefaultpermissions"
+    },
+    {
+      "label": "generateInvoicePdfBuffer",
+      "file_type": "code",
+      "source_file": "src/lib/services/pdf-generator.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "services_pdf_generator_generateinvoicepdfbuffer",
+      "community": 16,
+      "norm_label": "generateinvoicepdfbuffer"
+    },
+    {
+      "label": "handleTelegramUpdate",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "services_telegram_handlers_handletelegramupdate",
+      "community": 1,
+      "norm_label": "handletelegramupdate"
+    },
+    {
+      "label": "CartItem",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "services_telegram_state_cartitem",
+      "community": 84,
+      "norm_label": "cartitem"
+    },
+    {
+      "label": "SaleState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "services_telegram_state_salestate",
+      "community": 91,
+      "norm_label": "salestate"
+    },
+    {
+      "label": "InvoiceSearchState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "services_telegram_state_invoicesearchstate",
+      "community": 89,
+      "norm_label": "invoicesearchstate"
+    },
+    {
+      "label": "StockSearchState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "services_telegram_state_stocksearchstate",
+      "community": 96,
+      "norm_label": "stocksearchstate"
+    },
+    {
+      "label": "DatePickerState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "services_telegram_state_datepickerstate",
+      "community": 87,
+      "norm_label": "datepickerstate"
+    },
+    {
+      "label": "ConversationState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "services_telegram_state_conversationstate",
+      "community": 86,
+      "norm_label": "conversationstate"
+    },
+    {
+      "label": "getState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L68",
+      "_origin": "ast",
+      "id": "services_telegram_state_getstate",
+      "community": 1,
+      "norm_label": "getstate"
+    },
+    {
+      "label": "setState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L84",
+      "_origin": "ast",
+      "id": "services_telegram_state_setstate",
+      "community": 92,
+      "norm_label": "setstate"
+    },
+    {
+      "label": "clearState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "services_telegram_state_clearstate",
+      "community": 1,
+      "norm_label": "clearstate"
+    },
+    {
+      "label": "startSaleFlow",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "services_telegram_state_startsaleflow",
+      "community": 94,
+      "norm_label": "startsaleflow"
+    },
+    {
+      "label": "startInvoiceSearchFlow",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "services_telegram_state_startinvoicesearchflow",
+      "community": 93,
+      "norm_label": "startinvoicesearchflow"
+    },
+    {
+      "label": "startStockSearchFlow",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "services_telegram_state_startstocksearchflow",
+      "community": 95,
+      "norm_label": "startstocksearchflow"
+    },
+    {
+      "label": "updateSaleState",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L138",
+      "_origin": "ast",
+      "id": "services_telegram_state_updatesalestate",
+      "community": 97,
+      "norm_label": "updatesalestate"
+    },
+    {
+      "label": "addToCart",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "services_telegram_state_addtocart",
+      "community": 83,
+      "norm_label": "addtocart"
+    },
+    {
+      "label": "removeFromCart",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L174",
+      "_origin": "ast",
+      "id": "services_telegram_state_removefromcart",
+      "community": 90,
+      "norm_label": "removefromcart"
+    },
+    {
+      "label": "getCartTotal",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "services_telegram_state_getcarttotal",
+      "community": 1,
+      "norm_label": "getcarttotal"
+    },
+    {
+      "label": "formatCartSummary",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L192",
+      "_origin": "ast",
+      "id": "services_telegram_state_formatcartsummary",
+      "community": 88,
+      "norm_label": "formatcartsummary"
+    },
+    {
+      "label": "cleanupExpiredStates",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-state.ts",
+      "source_location": "L209",
+      "_origin": "ast",
+      "id": "services_telegram_state_cleanupexpiredstates",
+      "community": 85,
+      "norm_label": "cleanupexpiredstates"
+    },
+    {
+      "label": "InlineButton",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "services_telegram_inlinebutton",
+      "community": 78,
+      "norm_label": "inlinebutton"
+    },
+    {
+      "label": "InlineKeyboard",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "services_telegram_inlinekeyboard",
+      "community": 79,
+      "norm_label": "inlinekeyboard"
+    },
+    {
+      "label": "sendMessage",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "services_telegram_sendmessage",
+      "community": 1,
+      "norm_label": "sendmessage"
+    },
+    {
+      "label": "editMessage",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "services_telegram_editmessage",
+      "community": 76,
+      "norm_label": "editmessage"
+    },
+    {
+      "label": "answerCallback",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "services_telegram_answercallback",
+      "community": 74,
+      "norm_label": "answercallback"
+    },
+    {
+      "label": "sendDocument",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "services_telegram_senddocument",
+      "community": 1,
+      "norm_label": "senddocument"
+    },
+    {
+      "label": "deleteMessage",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L120",
+      "_origin": "ast",
+      "id": "services_telegram_deletemessage",
+      "community": 75,
+      "norm_label": "deletemessage"
+    },
+    {
+      "label": "btn",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "services_telegram_btn",
+      "community": 1,
+      "norm_label": "btn"
+    },
+    {
+      "label": "mainMenuKeyboard",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "services_telegram_mainmenukeyboard",
+      "community": 80,
+      "norm_label": "mainmenukeyboard"
+    },
+    {
+      "label": "navRow",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "services_telegram_navrow",
+      "community": 81,
+      "norm_label": "navrow"
+    },
+    {
+      "label": "setupWebhook",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "services_telegram_setupwebhook",
+      "community": 82,
+      "norm_label": "setupwebhook"
+    },
+    {
+      "label": "getWebhookInfo",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram.ts",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "services_telegram_getwebhookinfo",
+      "community": 77,
+      "norm_label": "getwebhookinfo"
+    },
+    {
+      "label": "createClient",
+      "file_type": "code",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "supabase_server_createclient",
+      "community": 103,
+      "norm_label": "createclient"
+    },
+    {
+      "label": "createAdminClient",
+      "file_type": "code",
+      "source_file": "src/lib/supabase/server.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "supabase_server_createadminclient",
+      "community": 102,
+      "norm_label": "createadminclient"
+    },
+    {
+      "label": "tafqeet",
+      "file_type": "code",
+      "source_file": "src/lib/tafqeet.ts",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "lib_tafqeet_tafqeet",
+      "community": 61,
+      "norm_label": "tafqeet"
+    },
+    {
+      "label": "middleware",
+      "file_type": "code",
+      "source_file": "src/middleware.ts",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "src_middleware_middleware",
+      "community": 7,
+      "norm_label": "middleware"
+    },
+    {
+      "label": "Arabic Translations",
+      "file_type": "document",
+      "source_file": "messages/ar.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "messages_ar_translations",
+      "community": 12,
+      "norm_label": "arabic translations"
+    },
+    {
+      "label": "English Translations",
+      "file_type": "document",
+      "source_file": "messages/en.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "messages_en_translations",
+      "community": 12,
+      "norm_label": "english translations"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "seed-coffee-items.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_coffee_items_main",
+      "community": 0,
+      "norm_label": "main"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "seed-products-with-pricing.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_products_with_pricing_main",
+      "community": 0,
+      "norm_label": "main"
+    },
+    {
+      "label": "main",
+      "file_type": "code",
+      "source_file": "seed-update-all.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_update_all_main",
+      "community": 0,
+      "norm_label": "main"
+    },
+    {
+      "label": "ensureProduct",
+      "file_type": "code",
+      "source_file": "seed-update-all.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_update_all_ensureproduct",
+      "community": 73,
+      "norm_label": "ensureproduct"
+    },
+    {
+      "label": "ensureCategory",
+      "file_type": "code",
+      "source_file": "seed-update-all.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_update_all_ensurecategory",
+      "community": 72,
+      "norm_label": "ensurecategory"
+    },
+    {
+      "label": "addInventory",
+      "file_type": "code",
+      "source_file": "seed-update-all.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "seed_update_all_addinventory",
+      "community": 71,
+      "norm_label": "addinventory"
+    },
+    {
+      "label": "getPrisma",
+      "file_type": "code",
+      "source_file": "src/lib/prisma.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "lib_prisma_getprisma",
+      "community": 0,
+      "norm_label": "getprisma"
+    },
+    {
+      "label": "Package Scripts",
+      "file_type": "document",
+      "source_file": "package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "package_scripts",
+      "community": 14,
+      "norm_label": "package scripts"
+    },
+    {
+      "label": "Playwright Config",
+      "file_type": "code",
+      "source_file": "playwright.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "playwright_config_playwrightconfig",
+      "community": 14,
+      "norm_label": "playwright config"
+    },
+    {
+      "label": "withNextIntl",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "next_config_withnextintl",
+      "community": 10,
+      "norm_label": "withnextintl"
+    },
+    {
+      "label": "i18n request module",
+      "file_type": "code",
+      "source_file": "src/i18n/request.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "i18n_request_module",
+      "community": 10,
+      "norm_label": "i18n request module"
+    },
+    {
+      "label": "MovementsPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/movements/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "movements_page_movementspage",
+      "community": 13,
+      "norm_label": "movementspage"
+    },
+    {
+      "label": "Transaction Interface",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/movements/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "movements_page_transaction",
+      "community": 13,
+      "norm_label": "transaction interface"
+    },
+    {
+      "label": "PricingPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/pricing/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "pricing_page_pricingpage",
+      "community": 64,
+      "norm_label": "pricingpage"
+    },
+    {
+      "label": "ProductsPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/products/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "products_page_productspage",
+      "community": 15,
+      "norm_label": "productspage"
+    },
+    {
+      "label": "Product Interface",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/products/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "products_page_product",
+      "community": 15,
+      "norm_label": "product interface"
+    },
+    {
+      "label": "ProfitsPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/profits/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "profits_page_profitspage",
+      "community": 5,
+      "norm_label": "profitspage"
+    },
+    {
+      "label": "Invoice Interface",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/profits/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "profits_page_invoice",
+      "community": 5,
+      "norm_label": "invoice interface"
+    },
+    {
+      "label": "RefundHistoryPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/refunds/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "refunds_page_refundhistorypage",
+      "community": 18,
+      "norm_label": "refundhistorypage"
+    },
+    {
+      "label": "Refund Interface",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/refunds/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "refunds_page_refund",
+      "community": 18,
+      "norm_label": "refund interface"
+    },
+    {
+      "label": "SalesPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/sales/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sales_page_salespage",
+      "community": 19,
+      "norm_label": "salespage"
+    },
+    {
+      "label": "CartItem Interface",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/sales/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "sales_page_cartitem",
+      "community": 19,
+      "norm_label": "cartitem interface"
+    },
+    {
+      "label": "QuickPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/sales/quick/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "quick_page_quickpage",
+      "community": 69,
+      "norm_label": "quickpage"
+    },
+    {
+      "label": "StaffSalesPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/staff-sales/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "staff_sales_page_staffsalespage",
+      "community": 5,
+      "norm_label": "staffsalespage"
+    },
+    {
+      "label": "StocktakePage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/stocktake/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "stocktake_page_stocktakepage",
+      "community": 101,
+      "norm_label": "stocktakepage"
+    },
+    {
+      "label": "UsersPage",
+      "file_type": "code",
+      "source_file": "src/app/[locale]/(dashboard)/users/page.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "users_page_userspage",
+      "community": 108,
+      "norm_label": "userspage"
+    },
+    {
+      "label": "verifyInvoiceQuantities",
+      "file_type": "code",
+      "source_file": "src/app/actions/refunds.ts",
+      "id": "actions_refunds_verifyinvoicequantities",
+      "community": 2,
+      "norm_label": "verifyinvoicequantities"
+    },
+    {
+      "label": "processRefundStockUpdates",
+      "file_type": "code",
+      "source_file": "src/app/actions/refunds.ts",
+      "id": "actions_refunds_processrefundstockupdates",
+      "community": 2,
+      "norm_label": "processrefundstockupdates"
+    },
+    {
+      "label": "GET",
+      "file_type": "code",
+      "source_file": "src/app/api/invoices/[id]/pdf/route.ts",
+      "id": "pdf_route_get",
+      "community": 0,
+      "norm_label": "get"
+    },
+    {
+      "label": "DebtsReportPage",
+      "file_type": "code",
+      "source_file": "src/app/reports/debts/page.tsx",
+      "id": "debts_page_debtsreportpage",
+      "community": 4,
+      "norm_label": "debtsreportpage"
+    },
+    {
+      "label": "BulkImportDropzone",
+      "file_type": "code",
+      "source_file": "src/components/BulkImportDropzone.tsx",
+      "id": "components_bulkimportdropzone_bulkimportdropzone",
+      "community": 4,
+      "norm_label": "bulkimportdropzone"
+    },
+    {
+      "label": "PrePrintEditModal",
+      "file_type": "code",
+      "source_file": "src/components/PrePrintEditModal.tsx",
+      "id": "components_preprinteditmodal_preprinteditmodal",
+      "community": 4,
+      "norm_label": "preprinteditmodal"
+    },
+    {
+      "label": "RefundModal",
+      "file_type": "code",
+      "source_file": "src/components/RefundModal.tsx",
+      "id": "components_refundmodal_refundmodal",
+      "community": 2,
+      "norm_label": "refundmodal"
+    },
+    {
+      "label": "printElement",
+      "file_type": "code",
+      "source_file": "src/components/ui/PrintExport.tsx",
+      "id": "ui_printexport_printelement",
+      "community": 107,
+      "norm_label": "printelement"
+    },
+    {
+      "label": "default",
+      "file_type": "code",
+      "source_file": "src/i18n/request.ts",
+      "id": "i18n_request_default",
+      "community": 9,
+      "norm_label": "default"
+    },
+    {
+      "label": "routing",
+      "file_type": "code",
+      "source_file": "src/i18n/routing.ts",
+      "id": "i18n_routing_routing",
+      "community": 9,
+      "norm_label": "routing"
+    },
+    {
+      "label": "DEFAULT_PERMISSIONS",
+      "file_type": "code",
+      "source_file": "src/lib/permissions.ts",
+      "id": "lib_permissions_default_permissions",
+      "community": 11,
+      "norm_label": "default_permissions"
+    },
+    {
+      "label": "ALL_PERMISSIONS",
+      "file_type": "code",
+      "source_file": "src/lib/permissions.ts",
+      "id": "lib_permissions_all_permissions",
+      "community": 60,
+      "norm_label": "all_permissions"
+    },
+    {
+      "label": "processSaleFromBot",
+      "file_type": "code",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "services_telegram_handlers_processsalefrombot",
+      "community": 1,
+      "norm_label": "processsalefrombot"
+    },
+    {
+      "label": "Performance Testing",
+      "file_type": "code",
+      "source_file": "tests/performance.spec.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tests_performance_spec_performancetesting",
+      "community": 104,
+      "norm_label": "performance testing"
+    },
+    {
+      "label": "login",
+      "file_type": "code",
+      "source_file": "tests/pos.spec.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tests_pos_spec_login",
+      "community": 7,
+      "norm_label": "login"
+    },
+    {
+      "label": "POS - Point of Sale",
+      "file_type": "code",
+      "source_file": "tests/pos.spec.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tests_pos_spec_pos_pointofsale",
+      "community": 8,
+      "norm_label": "pos - point of sale"
+    },
+    {
+      "label": "Login Page UI/UX",
+      "file_type": "code",
+      "source_file": "tests/ui-ux.spec.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tests_ui_ux_spec_loginpage_ui_ux_design",
+      "community": 7,
+      "norm_label": "login page ui/ux"
+    },
+    {
+      "label": "Invoice Template",
+      "file_type": "code",
+      "source_file": "public/invoice-sacho.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_invoice_sacho_html",
+      "community": 16,
+      "norm_label": "invoice template"
+    },
+    {
+      "label": "Next.js Project Readme",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "readme_readme",
+      "community": 70,
+      "norm_label": "next.js project readme"
+    },
+    {
+      "label": "AAT Config",
+      "file_type": "document",
+      "source_file": "aat.config.yaml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "aat_config_config",
+      "community": 8,
+      "norm_label": "aat config"
+    },
+    {
+      "label": "TSConfig",
+      "file_type": "document",
+      "source_file": "tsconfig.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "tsconfig_config",
+      "community": 105,
+      "norm_label": "tsconfig"
+    },
+    {
+      "label": "ESLint Output",
+      "file_type": "document",
+      "source_file": "eslint_output.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "eslint_output_error",
+      "community": 59,
+      "norm_label": "eslint output"
+    },
+    {
+      "label": "csv-writer declarations",
+      "file_type": "code",
+      "source_file": "src/types/csv-writer.d.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "types_csv_writer_csvwriter",
+      "community": 106,
+      "norm_label": "csv-writer declarations"
+    },
+    {
+      "label": "Document Icon",
+      "file_type": "image",
+      "source_file": "public/file.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_file_document_icon",
+      "community": 65,
+      "norm_label": "document icon"
+    },
+    {
+      "label": "Globe Icon",
+      "file_type": "image",
+      "source_file": "public/globe.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_globe_icon",
+      "community": 66,
+      "norm_label": "globe icon"
+    },
+    {
+      "label": "Epic Company Logo Image",
+      "file_type": "image",
+      "source_file": "public/logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_logo_image",
+      "community": 3,
+      "norm_label": "epic company logo image"
+    },
+    {
+      "label": "Epic Company",
+      "file_type": "concept",
+      "source_file": "public/logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_logo_epic_company",
+      "community": 3,
+      "norm_label": "epic company"
+    },
+    {
+      "label": "EP Monogram",
+      "file_type": "concept",
+      "source_file": "public/logo.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_logo_ep_monogram",
+      "community": 3,
+      "norm_label": "ep monogram"
+    },
+    {
+      "label": "Epic Company Logo",
+      "file_type": "image",
+      "source_file": "public/logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_logo_epic_company_logo",
+      "community": 3,
+      "norm_label": "epic company logo"
+    },
+    {
+      "label": "Next.js Logo",
+      "file_type": "image",
+      "source_file": "public/next.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_next_logo",
+      "community": 67,
+      "norm_label": "next.js logo"
+    },
+    {
+      "label": "STASH Frozen & More",
+      "file_type": "concept",
+      "source_file": "public/stash-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_stash_logo_brand",
+      "community": 6,
+      "norm_label": "stash frozen & more"
+    },
+    {
+      "label": "STASH Logo",
+      "file_type": "image",
+      "source_file": "public/stash-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_stash_logo_image",
+      "community": 6,
+      "norm_label": "stash logo"
+    },
+    {
+      "label": "Circular Line-Art Montage of Food and Drinks",
+      "file_type": "rationale",
+      "source_file": "public/stash-logo.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_stash_logo_design_pattern",
+      "community": 6,
+      "norm_label": "circular line-art montage of food and drinks"
+    },
+    {
+      "label": "Vercel Logo",
+      "file_type": "image",
+      "source_file": "public/vercel.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_vercel_logo",
+      "community": 68,
+      "norm_label": "vercel logo"
+    },
+    {
+      "label": "Window UI Icon",
+      "file_type": "image",
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_window_icon",
+      "community": 17,
+      "norm_label": "window ui icon"
+    },
+    {
+      "label": "macOS-style Window Header",
+      "file_type": "concept",
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "public_window_macos_style_header",
+      "community": 17,
+      "norm_label": "macos-style window header"
+    }
+  ],
+  "links": [
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/refunds.ts",
+      "source": "actions_refunds_createrefund",
+      "target": "actions_refunds_processrefundstockupdates"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/refunds.ts",
+      "source": "actions_refunds_createrefund",
+      "target": "actions_refunds_verifyinvoicequantities"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/refunds.ts",
+      "source": "actions_refunds_createrefund",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/RefundModal.tsx",
+      "source": "components_refundmodal_refundmodal",
+      "target": "actions_refunds_createrefund"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/refunds.ts",
+      "source": "actions_refunds_getrefunds",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/sales.ts",
+      "source": "actions_sales_getproducts",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/sales.ts",
+      "source": "actions_sales_getcategories",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/sales.ts",
+      "source": "actions_sales_getstafflist",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/sales.ts",
+      "source": "actions_sales_processsale",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "actions_sales_processsale"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/staff.ts",
+      "source": "actions_staff_getstafflist",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/staff.ts",
+      "source": "actions_staff_getstaffsalesdetail",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/stocktake.ts",
+      "source": "actions_stocktake_getstocktakeitems",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/stocktake.ts",
+      "source": "actions_stocktake_reconcilestock",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/transactions.ts",
+      "source": "actions_transactions_getstockmovements",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/users.ts",
+      "source": "actions_users_getusers",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/users.ts",
+      "source": "actions_users_deleteuser",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/users.ts",
+      "source": "actions_users_createuser",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/actions/users.ts",
+      "source": "actions_users_updateuser",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/cron/backup/route.ts",
+      "source": "backup_route_get",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/customers/bulk/route.ts",
+      "source": "bulk_route_post",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/reports/inventory/pdf/route.ts",
+      "source": "exports_route_get",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/reports/debts/route.ts",
+      "source": "debts_route_get",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/reports/inventory/route.ts",
+      "source": "inventory_route_get",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/permissions.ts",
+      "source": "lib_permissions_getdefaultpermissions",
+      "target": "lib_permissions_default_permissions"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/services/pdf-generator.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "services_pdf_generator_generateinvoicepdfbuffer",
+      "target": "public_invoice_sacho_html"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "services_telegram_handlers_handletelegramupdate",
+      "target": "services_telegram_sendmessage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L623",
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_state_getstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L661",
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_state_clearstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L652",
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_state_getcarttotal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L625",
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_sendmessage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_senddocument"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/lib/services/telegram-handlers.ts",
+      "source_location": "L673",
+      "weight": 1.0,
+      "source": "services_telegram_handlers_processsalefrombot",
+      "target": "services_telegram_btn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/middleware.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "src_middleware_middleware",
+      "target": "tests_pos_spec_login"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "messages/ar.json",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "messages_ar_translations",
+      "target": "messages_en_translations"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "seed-coffee-items.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "seed_coffee_items_main",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "seed-coffee-items.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "seed_coffee_items_main",
+      "target": "seed_products_with_pricing_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "seed-products-with-pricing.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "seed_products_with_pricing_main",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "seed-products-with-pricing.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "seed_products_with_pricing_main",
+      "target": "seed_update_all_main"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "seed-update-all.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "seed_update_all_main",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/api/invoices/[id]/pdf/route.ts",
+      "source": "pdf_route_get",
+      "target": "lib_prisma_getprisma"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "playwright.config.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "playwright_config_playwrightconfig",
+      "target": "package_scripts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "next.config.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "next_config_withnextintl",
+      "target": "i18n_request_module"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/[locale]/(dashboard)/movements/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "movements_page_movementspage",
+      "target": "movements_page_transaction"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/[locale]/(dashboard)/products/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "products_page_productspage",
+      "target": "products_page_product"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/[locale]/(dashboard)/profits/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "profits_page_profitspage",
+      "target": "profits_page_invoice"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/app/[locale]/(dashboard)/profits/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "profits_page_profitspage",
+      "target": "staff_sales_page_staffsalespage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/[locale]/(dashboard)/refunds/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "refunds_page_refundhistorypage",
+      "target": "refunds_page_refund"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/[locale]/(dashboard)/sales/page.tsx",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "sales_page_salespage",
+      "target": "sales_page_cartitem"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/reports/debts/page.tsx",
+      "source": "debts_page_debtsreportpage",
+      "target": "components_bulkimportdropzone_bulkimportdropzone"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/app/reports/debts/page.tsx",
+      "source": "debts_page_debtsreportpage",
+      "target": "components_preprinteditmodal_preprinteditmodal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/i18n/request.ts",
+      "source": "i18n_request_default",
+      "target": "i18n_routing_routing"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "tests/pos.spec.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tests_pos_spec_login",
+      "target": "tests_ui_ux_spec_loginpage_ui_ux_design"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "tests/pos.spec.ts",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "tests_pos_spec_pos_pointofsale",
+      "target": "aat_config_config"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/logo.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_logo_image",
+      "target": "public_logo_ep_monogram"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/logo.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_logo_image",
+      "target": "public_logo_epic_company"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/logo.webp",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_logo_epic_company_logo",
+      "target": "public_logo_epic_company"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "public/stash-logo.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_stash_logo_image",
+      "target": "public_stash_logo_brand"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/stash-logo.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_stash_logo_design_pattern",
+      "target": "public_stash_logo_image"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "public/window.svg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "public_window_icon",
+      "target": "public_window_macos_style_header"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "db_seeding_helpers",
+      "label": "Database Seeding Helpers",
+      "nodes": [
+        "seed_update_all_ensureproduct",
+        "seed_update_all_ensurecategory",
+        "seed_update_all_addinventory"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "seed-update-all.ts"
+    },
+    {
+      "id": "dashboard_views",
+      "label": "Dashboard Views",
+      "nodes": [
+        "movements_page_movementspage",
+        "pricing_page_pricingpage",
+        "products_page_productspage",
+        "profits_page_profitspage",
+        "refunds_page_refundhistorypage",
+        "sales_page_salespage",
+        "quick_page_quickpage",
+        "staff_sales_page_staffsalespage",
+        "stocktake_page_stocktakepage",
+        "users_page_userspage"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/app/[locale]/(dashboard)/movements/page.tsx"
+    },
+    {
+      "id": "telegram_bot_flow",
+      "label": "Telegram Bot Flow",
+      "nodes": [
+        "services_telegram_handlers_handletelegramupdate",
+        "services_telegram_handlers_processsalefrombot",
+        "services_telegram_state_salestate",
+        "services_telegram_sendmessage"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "src/lib/services/telegram-handlers.ts"
+    },
+    {
+      "id": "invoice_generation_concept",
+      "label": "Invoice Generation & Display",
+      "nodes": [
+        "services_pdf_generator_generateinvoicepdfbuffer",
+        "public_invoice_sacho_html",
+        "tests_pos_spec_pos_pointofsale"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "src/lib/services/pdf-generator.ts"
+    }
+  ],
+  "built_at_commit": "084476c2020d104162899d9998d4841aeeba139b"
+}

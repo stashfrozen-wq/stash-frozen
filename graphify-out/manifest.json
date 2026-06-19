@@ -1,0 +1,497 @@
+{
+  "C:\\Users\\PotterParker\\Desktop\\web\\.vscode\\settings.json": {
+    "mtime": 1778278383.7144802,
+    "ast_hash": "1aa4d8ca960dcb3cc8fdb4ffc2e881fd",
+    "semantic_hash": "1aa4d8ca960dcb3cc8fdb4ffc2e881fd"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\eslint.config.mjs": {
+    "mtime": 1778479355.8581915,
+    "ast_hash": "3c6457a72432c7bc0522f90ef727947a",
+    "semantic_hash": "3c6457a72432c7bc0522f90ef727947a"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\knip.json": {
+    "mtime": 1778472872.2172084,
+    "ast_hash": "bfd58665443dac1b5fc86a9c20d9a92b",
+    "semantic_hash": "bfd58665443dac1b5fc86a9c20d9a92b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\messages\\ar.json": {
+    "mtime": 1781597795.0424197,
+    "ast_hash": "b81b2e69ba4adbed2c071fa9f4b52085",
+    "semantic_hash": "b81b2e69ba4adbed2c071fa9f4b52085"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\messages\\en.json": {
+    "mtime": 1781597795.0392532,
+    "ast_hash": "4c0c4488cfdf4ef04ae65c2a2d07a33b",
+    "semantic_hash": "4c0c4488cfdf4ef04ae65c2a2d07a33b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\next.config.ts": {
+    "mtime": 1778522051.7600584,
+    "ast_hash": "d179cfa06f4e029aceb9b7dfe0abd57c",
+    "semantic_hash": "d179cfa06f4e029aceb9b7dfe0abd57c"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\package.json": {
+    "mtime": 1778489987.771685,
+    "ast_hash": "2336054cddcd7b941fd22725b76b33f7",
+    "semantic_hash": "2336054cddcd7b941fd22725b76b33f7"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\playwright.config.ts": {
+    "mtime": 1781639744.6958096,
+    "ast_hash": "a3fd84375ebc2bfed6faf4a24c5a013b",
+    "semantic_hash": "a3fd84375ebc2bfed6faf4a24c5a013b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\postcss.config.mjs": {
+    "mtime": 1778278291.3724215,
+    "ast_hash": "481fac0fdecd70e1821cc30b86030c1a",
+    "semantic_hash": "481fac0fdecd70e1821cc30b86030c1a"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\prisma.config.ts": {
+    "mtime": 1778293600.4237564,
+    "ast_hash": "136dbc62662cfe1d864b7740cd52a5a6",
+    "semantic_hash": "136dbc62662cfe1d864b7740cd52a5a6"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\seed-coffee-items.ts": {
+    "mtime": 1779079933.1895561,
+    "ast_hash": "e061687dcb5df88140f03559e80f6a05",
+    "semantic_hash": "e061687dcb5df88140f03559e80f6a05"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\seed-products-with-pricing.ts": {
+    "mtime": 1779542918.4475489,
+    "ast_hash": "d0e582335208aa43bd8958539fddcb74",
+    "semantic_hash": "d0e582335208aa43bd8958539fddcb74"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\seed-update-all.ts": {
+    "mtime": 1780834381.813267,
+    "ast_hash": "6541dfb014aa240bf6d702a3b49d271b",
+    "semantic_hash": "6541dfb014aa240bf6d702a3b49d271b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(auth)\\login\\page.tsx": {
+    "mtime": 1781638880.9929757,
+    "ast_hash": "0af4cfa44a37a395335f00ef104c8564",
+    "semantic_hash": "0af4cfa44a37a395335f00ef104c8564"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\analytics\\page.tsx": {
+    "mtime": 1781637700.008049,
+    "ast_hash": "ddb962b9d5c7f5218ef8b7babac70cd9",
+    "semantic_hash": "ddb962b9d5c7f5218ef8b7babac70cd9"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\customers\\page.tsx": {
+    "mtime": 1778631541.5307562,
+    "ast_hash": "d10d10fbe08468a9591921da0a05c7bd",
+    "semantic_hash": "d10d10fbe08468a9591921da0a05c7bd"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\customers\\profile\\page.tsx": {
+    "mtime": 1781637700.018444,
+    "ast_hash": "5262409199ac084b5645ccbd9e24cec8",
+    "semantic_hash": "5262409199ac084b5645ccbd9e24cec8"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\dashboard\\page.tsx": {
+    "mtime": 1778521182.5192423,
+    "ast_hash": "21655673633aca14cf0e789ec6f101cb",
+    "semantic_hash": "21655673633aca14cf0e789ec6f101cb"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\expenses\\page.tsx": {
+    "mtime": 1781637700.022713,
+    "ast_hash": "6dc88b5d21b433173020d9ab75cd8362",
+    "semantic_hash": "6dc88b5d21b433173020d9ab75cd8362"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\incoming\\page.tsx": {
+    "mtime": 1781637700.0243049,
+    "ast_hash": "61177060770f4eeed6ce44f118784905",
+    "semantic_hash": "61177060770f4eeed6ce44f118784905"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\inventory-count\\page.tsx": {
+    "mtime": 1781637700.025395,
+    "ast_hash": "244db4dd58975c749c7fb22868c98ee0",
+    "semantic_hash": "244db4dd58975c749c7fb22868c98ee0"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\invoices\\[id]\\print\\page.tsx": {
+    "mtime": 1781637700.030043,
+    "ast_hash": "790f1a7f70f162a3ca2bbff106b64b2d",
+    "semantic_hash": "790f1a7f70f162a3ca2bbff106b64b2d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\invoices\\page.tsx": {
+    "mtime": 1781637700.0280335,
+    "ast_hash": "09b1fb21eb2581396457db42aed0c79d",
+    "semantic_hash": "09b1fb21eb2581396457db42aed0c79d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\layout.tsx": {
+    "mtime": 1781637145.0410953,
+    "ast_hash": "b6d702924108332699b274a1a9c4fdf7",
+    "semantic_hash": "b6d702924108332699b274a1a9c4fdf7"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\logs\\page.tsx": {
+    "mtime": 1781637700.0332317,
+    "ast_hash": "e3bc85cc673035f78240c9c9d1cde041",
+    "semantic_hash": "e3bc85cc673035f78240c9c9d1cde041"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\movements\\page.tsx": {
+    "mtime": 1781637700.0352235,
+    "ast_hash": "5f79942ba8da16a0c49d7ddb23f0c99c",
+    "semantic_hash": "5f79942ba8da16a0c49d7ddb23f0c99c"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\pricing\\page.tsx": {
+    "mtime": 1781637700.0363703,
+    "ast_hash": "50f8a12a81b33126b5b5dbc7823a0d71",
+    "semantic_hash": "50f8a12a81b33126b5b5dbc7823a0d71"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\products\\page.tsx": {
+    "mtime": 1781637700.038473,
+    "ast_hash": "95c082ce733d65d1bc62bbb70642174f",
+    "semantic_hash": "95c082ce733d65d1bc62bbb70642174f"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\profits\\page.tsx": {
+    "mtime": 1781637700.0389776,
+    "ast_hash": "e80a3ce937f20f29bcfaf112f825f76e",
+    "semantic_hash": "e80a3ce937f20f29bcfaf112f825f76e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\refunds\\page.tsx": {
+    "mtime": 1781637700.041381,
+    "ast_hash": "572520ab18d64899cf5115bb502bb973",
+    "semantic_hash": "572520ab18d64899cf5115bb502bb973"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\sales\\page.tsx": {
+    "mtime": 1781637700.0435233,
+    "ast_hash": "0fdf618a3648d34fe0e1802f983cc7b6",
+    "semantic_hash": "0fdf618a3648d34fe0e1802f983cc7b6"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\sales\\quick\\page.tsx": {
+    "mtime": 1781656696.748735,
+    "ast_hash": "4084b1bc8a14d4966b453d028380ea21",
+    "semantic_hash": "4084b1bc8a14d4966b453d028380ea21"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\staff-sales\\page.tsx": {
+    "mtime": 1781637700.046259,
+    "ast_hash": "7d7a960626784f0fbbfab49ab8a026ff",
+    "semantic_hash": "7d7a960626784f0fbbfab49ab8a026ff"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\stocktake\\page.tsx": {
+    "mtime": 1781637700.0473602,
+    "ast_hash": "e588e87312ac2d073f7730fb38862381",
+    "semantic_hash": "e588e87312ac2d073f7730fb38862381"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\(dashboard)\\users\\page.tsx": {
+    "mtime": 1781637700.0489383,
+    "ast_hash": "7c13b041209278bcedb4d7bc8c42b545",
+    "semantic_hash": "7c13b041209278bcedb4d7bc8c42b545"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\layout.tsx": {
+    "mtime": 1778490069.2103312,
+    "ast_hash": "8a76e88b0be09f37715f390d20d691c3",
+    "semantic_hash": "8a76e88b0be09f37715f390d20d691c3"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\page.tsx": {
+    "mtime": 1778521159.4645743,
+    "ast_hash": "9387dc0d385ee7c83ff27bd0ba667e2c",
+    "semantic_hash": "9387dc0d385ee7c83ff27bd0ba667e2c"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\[locale]\\reports\\inventory\\page.tsx": {
+    "mtime": 1780426989.896965,
+    "ast_hash": "131fe04e64c2619670a34e96bdd9939e",
+    "semantic_hash": "131fe04e64c2619670a34e96bdd9939e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\analytics.ts": {
+    "mtime": 1780834698.7670033,
+    "ast_hash": "cb4bce1f733fc907b203b18e44186723",
+    "semantic_hash": "cb4bce1f733fc907b203b18e44186723"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\audit.ts": {
+    "mtime": 1778489917.2160392,
+    "ast_hash": "924421dff0070ab616c05d7a8cd8b110",
+    "semantic_hash": "924421dff0070ab616c05d7a8cd8b110"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\auth.ts": {
+    "mtime": 1778476386.3371353,
+    "ast_hash": "269ca648b147017a5e2f6eee3feb9f4d",
+    "semantic_hash": "269ca648b147017a5e2f6eee3feb9f4d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\customers.ts": {
+    "mtime": 1780834412.804893,
+    "ast_hash": "a85261aab40b997870a65b123f601cdc",
+    "semantic_hash": "a85261aab40b997870a65b123f601cdc"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\dashboard.ts": {
+    "mtime": 1778476386.3498404,
+    "ast_hash": "c1daf216677af9e73cb0d006ac8f0a24",
+    "semantic_hash": "c1daf216677af9e73cb0d006ac8f0a24"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\debts.ts": {
+    "mtime": 1778476386.353232,
+    "ast_hash": "db48f92e340df2df5952b1ce7b69a2e5",
+    "semantic_hash": "db48f92e340df2df5952b1ce7b69a2e5"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\expenses.ts": {
+    "mtime": 1778476480.3587675,
+    "ast_hash": "80697f2b68302f75fd5464cb77a1351e",
+    "semantic_hash": "80697f2b68302f75fd5464cb77a1351e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\incoming.ts": {
+    "mtime": 1780834441.8620863,
+    "ast_hash": "550eb3645323014cda55dfe3f2c8a332",
+    "semantic_hash": "550eb3645323014cda55dfe3f2c8a332"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\inventory.ts": {
+    "mtime": 1780834508.857332,
+    "ast_hash": "179836ac7bdf8c2be73ce5161e7c8aa6",
+    "semantic_hash": "179836ac7bdf8c2be73ce5161e7c8aa6"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\invoices.ts": {
+    "mtime": 1781637545.1111484,
+    "ast_hash": "5471a06819005c5d4741f5f2c6182066",
+    "semantic_hash": "5471a06819005c5d4741f5f2c6182066"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\payroll.ts": {
+    "mtime": 1778476386.366448,
+    "ast_hash": "361c2bc2a0fbf2f0c28232099018da93",
+    "semantic_hash": "361c2bc2a0fbf2f0c28232099018da93"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\permissions.ts": {
+    "mtime": 1781595289.112949,
+    "ast_hash": "844031e7ce64f9b5b6914da204cdbfa8",
+    "semantic_hash": "844031e7ce64f9b5b6914da204cdbfa8"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\refunds.ts": {
+    "mtime": 1780834778.180387,
+    "ast_hash": "f01fa767a46c899e02b118536e52f9e3",
+    "semantic_hash": "f01fa767a46c899e02b118536e52f9e3"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\sales.ts": {
+    "mtime": 1780834047.9072053,
+    "ast_hash": "698483ee01c32f0a99e03acc4cbfb6df",
+    "semantic_hash": "698483ee01c32f0a99e03acc4cbfb6df"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\staff.ts": {
+    "mtime": 1780834544.2236335,
+    "ast_hash": "27439e2a5004bc892fe88e20f8855c2b",
+    "semantic_hash": "27439e2a5004bc892fe88e20f8855c2b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\stocktake.ts": {
+    "mtime": 1780834580.2460814,
+    "ast_hash": "a4e9f26947a88afb7ccbe907defed2e8",
+    "semantic_hash": "a4e9f26947a88afb7ccbe907defed2e8"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\transactions.ts": {
+    "mtime": 1780834473.2356699,
+    "ast_hash": "0b16e3a68388cb2c9bec5b8d08e308ba",
+    "semantic_hash": "0b16e3a68388cb2c9bec5b8d08e308ba"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\actions\\users.ts": {
+    "mtime": 1778478903.8105547,
+    "ast_hash": "c88d88b3b987a542e0138c527fac1deb",
+    "semantic_hash": "c88d88b3b987a542e0138c527fac1deb"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\cron\\backup\\route.ts": {
+    "mtime": 1778478903.8125854,
+    "ast_hash": "0c8b1dab2a5d591b5168c983573fd8c3",
+    "semantic_hash": "0c8b1dab2a5d591b5168c983573fd8c3"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\customers\\bulk\\route.ts": {
+    "mtime": 1778476480.3673701,
+    "ast_hash": "2719b645905c80a7b5c25b29ed141db3",
+    "semantic_hash": "2719b645905c80a7b5c25b29ed141db3"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\exports\\route.ts": {
+    "mtime": 1778476386.406507,
+    "ast_hash": "9c17e8f8ced44afd60000bba7cc3df7d",
+    "semantic_hash": "9c17e8f8ced44afd60000bba7cc3df7d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\invoices\\[id]\\pdf\\route.ts": {
+    "mtime": 1781595270.280705,
+    "ast_hash": "759ad52719ddc8de880b89f68a5e9c99",
+    "semantic_hash": "759ad52719ddc8de880b89f68a5e9c99"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\reports\\debts\\route.ts": {
+    "mtime": 1778476480.368377,
+    "ast_hash": "38c7f4f2f432d86f347ca5a77b96802a",
+    "semantic_hash": "38c7f4f2f432d86f347ca5a77b96802a"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\reports\\inventory\\pdf\\route.ts": {
+    "mtime": 1780834774.4217024,
+    "ast_hash": "9a4e071dcb1dbbfdf8fb535f93c15fe9",
+    "semantic_hash": "9a4e071dcb1dbbfdf8fb535f93c15fe9"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\reports\\inventory\\route.ts": {
+    "mtime": 1780834776.0926266,
+    "ast_hash": "2f7c48464119a49609610f178bb45c5b",
+    "semantic_hash": "2f7c48464119a49609610f178bb45c5b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\telegram\\setup\\route.ts": {
+    "mtime": 1781595231.4754815,
+    "ast_hash": "1c34c28fcbad67108ac5644dc45432e4",
+    "semantic_hash": "1c34c28fcbad67108ac5644dc45432e4"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\api\\telegram\\webhook\\route.ts": {
+    "mtime": 1781595220.5314736,
+    "ast_hash": "1cbc1c6bbd117af7c8e59341fe6c4505",
+    "semantic_hash": "1cbc1c6bbd117af7c8e59341fe6c4505"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\layout.tsx": {
+    "mtime": 1778490073.8305357,
+    "ast_hash": "ac272a64f04d9394a589d08846182bdb",
+    "semantic_hash": "ac272a64f04d9394a589d08846182bdb"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\app\\reports\\debts\\page.tsx": {
+    "mtime": 1778480243.6438997,
+    "ast_hash": "b4286c2a62d937e75a64cf4cc8315045",
+    "semantic_hash": "b4286c2a62d937e75a64cf4cc8315045"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\components\\BulkImportDropzone.tsx": {
+    "mtime": 1778479836.6234906,
+    "ast_hash": "6fbc5f840bb51dfda810cf9a5ba2fdaf",
+    "semantic_hash": "6fbc5f840bb51dfda810cf9a5ba2fdaf"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\components\\PrePrintEditModal.tsx": {
+    "mtime": 1778481594.6772559,
+    "ast_hash": "6b19c9b26c0d96cc6af11ebf2c58657d",
+    "semantic_hash": "6b19c9b26c0d96cc6af11ebf2c58657d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\components\\RefundModal.tsx": {
+    "mtime": 1778479849.075104,
+    "ast_hash": "bb3f4c2341a28e093f49ea40e2d7039e",
+    "semantic_hash": "bb3f4c2341a28e093f49ea40e2d7039e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\components\\ui\\PrintExport.tsx": {
+    "mtime": 1778518790.2079022,
+    "ast_hash": "041c3114f3a58107b41144791458ca29",
+    "semantic_hash": "041c3114f3a58107b41144791458ca29"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\i18n\\request.ts": {
+    "mtime": 1778490013.371856,
+    "ast_hash": "cf5abecc06c36852555e68e9e8b2aa9f",
+    "semantic_hash": "cf5abecc06c36852555e68e9e8b2aa9f"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\i18n\\routing.ts": {
+    "mtime": 1778518779.7390232,
+    "ast_hash": "c828805b68a9f767cbe086d1ea4f7893",
+    "semantic_hash": "c828805b68a9f767cbe086d1ea4f7893"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\permissions.ts": {
+    "mtime": 1778476386.4670575,
+    "ast_hash": "55cf268071af3a74d99d781cda145e32",
+    "semantic_hash": "55cf268071af3a74d99d781cda145e32"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\prisma.ts": {
+    "mtime": 1778476386.4686246,
+    "ast_hash": "05eb1240cb3b3f942e864683d8b50523",
+    "semantic_hash": "05eb1240cb3b3f942e864683d8b50523"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\services\\pdf-generator.ts": {
+    "mtime": 1781595247.9158304,
+    "ast_hash": "13cffd956aeb80501d6bd3699a48c760",
+    "semantic_hash": "13cffd956aeb80501d6bd3699a48c760"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\services\\telegram-handlers.ts": {
+    "mtime": 1781593428.5333352,
+    "ast_hash": "c04e4481263c53566f4728ee3959ed3b",
+    "semantic_hash": "c04e4481263c53566f4728ee3959ed3b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\services\\telegram-state.ts": {
+    "mtime": 1781593270.6126869,
+    "ast_hash": "871b37781e70bcf340d4283979644db3",
+    "semantic_hash": "871b37781e70bcf340d4283979644db3"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\services\\telegram.ts": {
+    "mtime": 1781593245.812661,
+    "ast_hash": "5f9a2d0a2d0c04627f43cc8f5ff5bf4c",
+    "semantic_hash": "5f9a2d0a2d0c04627f43cc8f5ff5bf4c"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\supabase\\server.ts": {
+    "mtime": 1778474004.204688,
+    "ast_hash": "0a51d485f6242b53cc96d067ffaf6925",
+    "semantic_hash": "0a51d485f6242b53cc96d067ffaf6925"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\lib\\tafqeet.ts": {
+    "mtime": 1778474008.258035,
+    "ast_hash": "da020b5273c71805d612a4ab99c07d00",
+    "semantic_hash": "da020b5273c71805d612a4ab99c07d00"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\middleware.ts": {
+    "mtime": 1778490091.1411693,
+    "ast_hash": "62f7a91cee7e39d5c435f05040980c51",
+    "semantic_hash": "62f7a91cee7e39d5c435f05040980c51"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\src\\types\\csv-writer.d.ts": {
+    "mtime": 1778473836.4984517,
+    "ast_hash": "d25a7d579dad19e87a95f0e94a398484",
+    "semantic_hash": "d25a7d579dad19e87a95f0e94a398484"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\tests\\performance.spec.ts": {
+    "mtime": 1781639784.0317664,
+    "ast_hash": "f76da66a494541158dd1cb3b208176ca",
+    "semantic_hash": "f76da66a494541158dd1cb3b208176ca"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\tests\\pos.spec.ts": {
+    "mtime": 1781640171.616829,
+    "ast_hash": "e21794336b4d66d194cf280d80e4f4d1",
+    "semantic_hash": "e21794336b4d66d194cf280d80e4f4d1"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\tests\\ui-ux.spec.ts": {
+    "mtime": 1781639755.476228,
+    "ast_hash": "09dfe63baabec9f0022528d8ac560d9b",
+    "semantic_hash": "09dfe63baabec9f0022528d8ac560d9b"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\tsconfig.json": {
+    "mtime": 1778278291.6305192,
+    "ast_hash": "0a2f4ed9289b65cd3feb4fb4ab3a4fcd",
+    "semantic_hash": "0a2f4ed9289b65cd3feb4fb4ab3a4fcd"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\README.md": {
+    "mtime": 1778278291.2778623,
+    "ast_hash": "9162add00befbcdb432430f405c4ad8d",
+    "semantic_hash": "9162add00befbcdb432430f405c4ad8d"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\aat.config.yaml": {
+    "mtime": 1778282823.1272433,
+    "ast_hash": "0d358fa2bfe7bb91f979ee3c0a206f6c",
+    "semantic_hash": "0d358fa2bfe7bb91f979ee3c0a206f6c"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\eslint_output.txt": {
+    "mtime": 1778476154.5311427,
+    "ast_hash": "6a271e92d87908283f79170bc348a7a8",
+    "semantic_hash": "6a271e92d87908283f79170bc348a7a8"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\invoice-sacho.html": {
+    "mtime": 1781194584.7249036,
+    "ast_hash": "c2a249ce77b59a75075c4df4316631b4",
+    "semantic_hash": "c2a249ce77b59a75075c4df4316631b4"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\file.svg": {
+    "mtime": 1778278291.375872,
+    "ast_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71",
+    "semantic_hash": "d09f95206c3fa0bb9bd9fefabfd0ea71"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\globe.svg": {
+    "mtime": 1778278291.375872,
+    "ast_hash": "2aaafa6a49b6563925fe440891e32717",
+    "semantic_hash": "2aaafa6a49b6563925fe440891e32717"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\logo.jpg": {
+    "mtime": 1778278291.3774753,
+    "ast_hash": "34f29252161ead48051824030d922109",
+    "semantic_hash": "34f29252161ead48051824030d922109"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\logo.webp": {
+    "mtime": 1778278291.377984,
+    "ast_hash": "beecd9b11014c92d43d9215407b3afc7",
+    "semantic_hash": "beecd9b11014c92d43d9215407b3afc7"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\next.svg": {
+    "mtime": 1778278291.377984,
+    "ast_hash": "8e061864f388b47f33a1c3780831193e",
+    "semantic_hash": "8e061864f388b47f33a1c3780831193e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\stash-logo.png": {
+    "mtime": 1778487518.3831904,
+    "ast_hash": "44b3e85341ebbb81e7e924c680c9ddd0",
+    "semantic_hash": "44b3e85341ebbb81e7e924c680c9ddd0"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\vercel.svg": {
+    "mtime": 1778278291.3797345,
+    "ast_hash": "c0af2f507b369b085b35ef4bbe3bcf1e",
+    "semantic_hash": "c0af2f507b369b085b35ef4bbe3bcf1e"
+  },
+  "C:\\Users\\PotterParker\\Desktop\\web\\public\\window.svg": {
+    "mtime": 1778278291.3807442,
+    "ast_hash": "a2760511c65806022ad20adf74370ff3",
+    "semantic_hash": "a2760511c65806022ad20adf74370ff3"
+  }
+}

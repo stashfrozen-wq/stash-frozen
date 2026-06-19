@@ -1,0 +1,22 @@
+# GitHub Codeowners Configuration
+# Lines starting with '#' are comments and are ignored.
+# For details on the syntax, see:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-codeowners
+
+# Default owner for everything in the repository:
+*       @owner/devops-lead
+
+# Database Schema & Migrations:
+prisma/schema.prisma    @owner/db-lead
+prisma/migrations/      @owner/db-lead
+
+# Backend Server Actions & Business Logic:
+src/app/actions/        @owner/backend-lead
+src/app/api/            @owner/backend-lead
+src/lib/services/       @owner/backend-lead
+src/lib/auth/           @owner/backend-lead
+
+# Frontend Routing, Localized Dashboard Pages, Components & i18n Translations:
+src/app/[locale]/(dashboard)/   @owner/frontend-lead
+src/components/                 @owner/frontend-lead
+messages/                       @owner/frontend-lead

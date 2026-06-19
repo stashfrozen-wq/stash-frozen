@@ -1,0 +1,343 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Enums
+enum Role {
+  ROOT
+  ADMIN
+  ACCOUNTANT
+  SALESPERSON
+  READ_ONLY
+}
+
+enum LocationType {
+  WAREHOUSE
+  VEHICLE
+}
+
+enum TransactionType {
+  SALE
+  IN
+  OUT
+  TRANSFER
+  RETURN
+  REFUND_RESTOCK
+  REFUND_DEFECTIVE
+}
+
+enum PaymentMethod {
+  CASH
+  INSTAPAY
+  CREDIT
+}
+
+enum InvoiceStatus {
+  ACCEPTED
+  PENDING_REVIEW
+  DECLINED
+  APPROVED
+}
+
+// Models
+model User {
+  id          String   @id @default(uuid())
+  username    String   @unique
+  password    String
+  role        Role     @default(READ_ONLY)
+  name        String?
+  phone       String?
+  address     String?
+  permissions String[] @default([])  // Page access: ["dashboard", "sales", "invoices", etc.]
+  branchId    String?  // Optional link to a specific location
+  baseSalary  Decimal  @default(0)
+  commissionRate Decimal @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+   // Relations
+   sales           Invoice[]
+   inventoryLogs   AuditLog[]
+   expenses        Expense[] @relation("UserExpenses")
+   processedRefunds Refund[]
+   recordedPayments CustomerPayment[] @relation("RecordedPayments")
+   reviewedInvoices Invoice[] @relation("InvoiceReviewer")
+}
+
+model Category {
+  id        String     @id @default(uuid())
+  name      String     @unique
+  products  Product[]
+}
+
+model Product {
+  id               String   @id @default(uuid())
+  name             String
+  sku              String   @unique
+  categoryId       String
+  category         Category @relation(fields: [categoryId], references: [id])
+  costPrice        Decimal
+  baseSellingPrice Decimal
+  retailPrice      Decimal  @default(0) // قطاعي
+  lowestRetailPrice Decimal @default(0) // اقل قطاعي
+  wholesalePrice   Decimal  @default(0) // جملة
+  lowestWholesalePrice Decimal @default(0) // اقل جملة
+  unit             String   @default("piece") // piece, kg, carton
+  image            String?
+  
+  // New Fields for Refund System
+  defectiveStock   Int      @default(0)
+  totalRefunded    Int      @default(0)
+  
+  inventoryItems   Inventory[]
+  transactionItems TransactionItem[]
+  invoiceItems     InvoiceItem[]
+  refundItems      RefundItem[]
+}
+
+model Location {
+  id        String       @id @default(uuid())
+  name      String
+  type      LocationType
+  
+  inventory      Inventory[]
+  sentTransfers  Transaction[]  @relation("FromLocation")
+  receivedTransfers Transaction[] @relation("ToLocation")
+}
+
+model Inventory {
+  id         String   @id @default(uuid())
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id])
+  locationId String
+  location   Location @relation(fields: [locationId], references: [id])
+  quantity   Decimal  @default(0)
+  reservedQuantity Decimal @default(0)
+
+  @@unique([productId, locationId])
+  @@index([locationId])
+}
+
+model Transaction {
+  id           String          @id @default(uuid())
+  type         TransactionType
+  date         DateTime        @default(now())
+  
+  fromLocationId String?
+  fromLocation   Location? @relation("FromLocation", fields: [fromLocationId], references: [id])
+  
+  toLocationId   String?
+  toLocation     Location? @relation("ToLocation", fields: [toLocationId], references: [id])
+  
+  items        TransactionItem[]
+  
+  supplierId   String?
+  supplier     Supplier? @relation(fields: [supplierId], references: [id])
+  
+  notes        String?
+  createdById  String?
+}
+
+model Supplier {
+  id        String   @id @default(uuid())
+  name      String
+  phone     String?
+  address   String?
+  balance   Decimal  @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  transactions Transaction[]
+}
+
+model TransactionItem {
+  id            String      @id @default(uuid())
+  transactionId String
+  transaction   Transaction @relation(fields: [transactionId], references: [id])
+  productId     String
+  product       Product     @relation(fields: [productId], references: [id])
+  quantity      Decimal
+
+  @@index([transactionId])
+  @@index([productId])
+}
+
+model Invoice {
+  id              String        @id @default(uuid())
+  date            DateTime      @default(now())
+  totalAmount     Decimal
+  paymentMethod   PaymentMethod
+  status          InvoiceStatus @default(ACCEPTED)
+
+  // Legacy fields (kept for compatibility during migration)
+  customerName    String?
+  customerPhone   String?
+  customerAddress String?
+
+  // New AR Fields
+  customerId      String?
+  customer        Customer?     @relation(fields: [customerId], references: [id])
+  previousBalance Decimal       @default(0)
+  amountPaid      Decimal       @default(0)
+  currentBalance  Decimal       @default(0)
+  discountType    String?       // "PERCENTAGE" or "FIXED"
+  discountValue   Decimal       @default(0)
+
+  userId          String?
+  user            User?         @relation(fields: [userId], references: [id])
+
+  // Review system fields
+  reviewerId      String?
+  reviewer        User?         @relation("InvoiceReviewer", fields: [reviewerId], references: [id])
+  reviewedAt      DateTime?
+  reviewNote      String?
+   revisedFromInvoiceId String?
+   revisedFrom     Invoice?      @relation("InvoiceRevisions", fields: [revisedFromInvoiceId], references: [id])
+   revisedBy       Invoice[]     @relation("InvoiceRevisions")
+
+   idempotencyKey  String?       @unique
+
+   items           InvoiceItem[]
+   refunds         Refund[]
+
+  @@index([date])
+  @@index([customerId])
+  @@index([userId])
+  @@index([status])
+  @@index([date, paymentMethod])
+}
+
+model Customer {
+  id        String   @id @default(uuid())
+  name      String
+  phone     String?
+  address   String?
+  governorate String?
+  balance   Decimal  @default(0)
+  
+  groupId   String?
+  group     CustomerGroup? @relation(fields: [groupId], references: [id])
+  
+  parentId  String?
+  parent    Customer?  @relation("CustomerHierarchy", fields: [parentId], references: [id])
+  children  Customer[] @relation("CustomerHierarchy")
+  
+   invoices  Invoice[]
+   payments  CustomerPayment[]
+   createdAt DateTime @default(now())
+   updatedAt DateTime @updatedAt
+
+   @@unique([name, phone])
+}
+
+model CustomerGroup {
+  id        String     @id @default(uuid())
+  name      String     @unique
+  customers Customer[]
+}
+
+
+
+model InvoiceItem {
+  id        String  @id @default(uuid())
+  invoiceId String
+  invoice   Invoice @relation(fields: [invoiceId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Decimal
+  unitPrice Decimal
+  subtotal  Decimal
+
+  @@index([invoiceId])
+  @@index([productId])
+}
+
+// Refund System Models
+model Refund {
+  id          String       @id @default(uuid())
+  createdAt   DateTime     @default(now())
+  totalAmount Decimal
+  reason      String?
+  
+  invoiceId   String?
+  invoice     Invoice?     @relation(fields: [invoiceId], references: [id])
+  
+  userId      String
+  user        User         @relation(fields: [userId], references: [id])
+  
+  items       RefundItem[]
+
+  @@index([createdAt])
+  @@index([invoiceId])
+}
+
+model RefundItem {
+  id        String     @id @default(uuid())
+  refundId  String
+  refund    Refund     @relation(fields: [refundId], references: [id])
+  
+  productId String
+  product   Product    @relation(fields: [productId], references: [id])
+  
+  quantity  Decimal
+  unitPrice Decimal
+  condition RefundCondition
+}
+
+enum RefundCondition {
+  NEW
+  DEFECTIVE
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  action    String
+  details   String?
+  status    Boolean  @default(true)
+  reason    String?
+  timestamp DateTime @default(now())
+
+  @@index([userId])
+  @@index([timestamp])
+}
+
+model Expense {
+   id          String   @id @default(uuid())
+   description String
+   amount      Decimal
+   date        DateTime @default(now())
+   category    String? 
+   
+   userId      String
+   user        User     @relation("UserExpenses", fields: [userId], references: [id])
+   
+   createdById String?
+   
+   createdAt   DateTime @default(now())
+   updatedAt   DateTime @updatedAt
+
+   @@index([userId])
+   @@index([date])
+}
+
+model CustomerPayment {
+   id          String   @id @default(uuid())
+   customerId  String
+   customer    Customer @relation(fields: [customerId], references: [id])
+   amount      Decimal
+   date        DateTime @default(now())
+   userId      String
+   user        User     @relation("RecordedPayments", fields: [userId], references: [id])
+   note        String?
+   createdAt   DateTime @default(now())
+
+   @@index([customerId])
+   @@index([date])
+}

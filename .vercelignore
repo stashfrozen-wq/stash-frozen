@@ -1,0 +1,25 @@
+# Test artifacts
+playwright-report/
+test-results/
+tests/
+coverage/
+
+# Tool config
+.aat/
+.vscode/
+
+# Non-build assets
+social media launching campaign/
+scenarios/
+scripts/
+
+# Log/lint output
+*.log
+build_log*.txt
+errors.txt
+lint_output*.txt
+lint-results*.txt
+eslint-*.json
+lint*.json
+aat-help.txt
+eslint_output.txt
