@@ -1237,7 +1237,7 @@ export default function SalesPage() {
                 </div>
 
                 {/* Sticky Bottom Bar for Mobile/Desktop */}
-                <div className="sticky bottom-0 left-0 right-0 p-4 md:p-6 mt-8 -mx-4 md:-mx-8 -mb-4 md:-mb-8 bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-10px_40px_rgba(0,0,0,0.1)] z-40 print-hidden">
+                <div className="sticky bottom-0 left-0 right-0 p-4 md:p-6 mt-8 -mx-4 md:-mx-8 -mb-4 md:-mb-8 bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-[0_-10px_40px_rgba(0,0,0,0.1)] z-30 print-hidden">
                     <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
                         <div className="hidden md:flex flex-col">
                             <span className="text-sm font-bold text-gray-500">الإجمالي العام</span>

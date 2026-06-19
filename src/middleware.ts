@@ -85,12 +85,7 @@ export async function middleware(request: NextRequest) {
                 },
                 setAll(cookiesToSet) {
                     cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value))
-                    supabaseResponse = NextResponse.next({
-                        request,
-                    })
-                    // Copy i18n headers/cookies if any
-                    i18nResponse.headers.forEach((v, k) => supabaseResponse.headers.set(k, v));
-                    
+                    // Mutate supabaseResponse directly to preserve the redirect status and headers
                     cookiesToSet.forEach(({ name, value, options }) =>
                         supabaseResponse.cookies.set(name, value, options)
                     )
@@ -100,10 +95,8 @@ export async function middleware(request: NextRequest) {
     )
 
     const {
-        data: { session },
-    } = await supabase.auth.getSession()
-
-    const user = session?.user ?? null
+        data: { user },
+    } = await supabase.auth.getUser()
 
     const pathname = request.nextUrl.pathname;
     

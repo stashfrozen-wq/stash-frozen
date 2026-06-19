@@ -774,7 +774,7 @@ export default function QuickWizard({ onSwitchMode }: QuickWizardProps) {
             )}
 
             {/* Bottom Actions Bar */}
-            <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/80 backdrop-blur-md border-t border-border z-50">
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-background/80 backdrop-blur-md border-t border-border z-30">
                 <div className="max-w-2xl mx-auto flex gap-3">
                     {step > 1 && (
                         <button

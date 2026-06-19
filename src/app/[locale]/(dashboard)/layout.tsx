@@ -237,6 +237,12 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     useEffect(() => {
         // Load menu items based on user permissions
         Promise.all([getMenuItemsForUser(), getCurrentUser()]).then(([items, user]) => {
+            if (!user) {
+                // User has an active Supabase session but no matching Prisma database record
+                // (e.g., after database wipe/reset). Clean up by signing out.
+                signOut();
+                return;
+            }
             setMenuItems(items as MenuItem[]);
             setCurrentUser(user as CurrentUser);
             setPermissionsLoaded(true);
@@ -303,14 +309,14 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             {/* Mobile Sidebar Overlay */}
             {isSidebarOpen && (
                 <div
-                    className="fixed inset-0 bg-black/50 z-20 lg:hidden"
+                    className="fixed inset-0 bg-black/50 z-40 lg:hidden"
                     onClick={handleCloseSidebar}
                 />
             )}
 
             {/* Sidebar */}
             <aside className={clsx(
-                "fixed lg:relative z-30 w-64 h-full bg-card border-r border-border flex flex-col transition-transform duration-300",
+                "fixed lg:relative z-[45] w-64 h-full bg-card border-r border-border flex flex-col transition-transform duration-300",
                 !isSidebarOpen
                     ? locale === 'ar'
                         ? "translate-x-full lg:translate-x-0"

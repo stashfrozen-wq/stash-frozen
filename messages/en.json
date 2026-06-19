@@ -28,7 +28,7 @@
     "inventory_count": "Inventory Count",
     "backup": "Backup Data",
     "debts": "Debts",
-    "reviews": "Price Reviews",
+    "reviews": "Invoice Reviews",
     "portfolio": "Portfolio",
     "reports": "Reports"
   },
@@ -362,6 +362,10 @@
     "user": "User"
   },
   "Customers": {
+    "filter": {
+      "all": "All Customers",
+      "inDebt": "In Debt"
+    },
     "title": "Customers",
     "subtitle": "Manage and analyze your customer base",
     "searchPlaceholder": "Search by name or phone...",
@@ -606,7 +610,7 @@
       "invoices": "Invoices",
       "customers": "Customers",
       "reports": "Reports",
-      "review": "Price Reviews",
+      "review": "Invoice Reviews",
       "portfolio": "Portfolio",
       "logs": "Audit Logs",
       "users": "Team",
