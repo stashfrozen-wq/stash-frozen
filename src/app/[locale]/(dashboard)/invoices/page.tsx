@@ -251,7 +251,10 @@ export default function InvoicesPage() {
                                     <div className="text-sm text-muted-foreground flex gap-2 items-center">
                                         <span className="font-mono bg-secondary px-1.5 py-0.5 rounded text-xs"># {inv.id.slice(0, 8).toUpperCase()}</span>
                                         <span>•</span>
-                                        <span>{new Date(inv.date).toLocaleDateString(locale)}</span>
+                                        <div className="flex flex-col gap-0.5 leading-none">
+                                            <span>{new Date(inv.date).toLocaleDateString(locale)}</span>
+                                            <span className="text-[10px] opacity-70" dir="ltr">{new Date(inv.date).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })}</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +365,12 @@ export default function InvoicesPage() {
                     <tbody>
                         {filteredInvoices.map(inv => (
                             <tr key={inv.id}>
-                                <td>{new Date(inv.date).toLocaleDateString(locale)}</td>
+                                <td>
+                                    <div className="flex flex-col gap-0.5">
+                                        <span>{new Date(inv.date).toLocaleDateString(locale)}</span>
+                                        <span className="text-[10px] text-gray-500" dir="ltr">{new Date(inv.date).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' })}</span>
+                                    </div>
+                                </td>
                                 <td>{inv.id.slice(0, 8).toUpperCase()}</td>
                                 <td>{inv.customerName || (inv.user ? inv.user.username : t('walkInCustomer'))}</td>
                                 <td className={'text-center'}>{ts('currency')} {Number(inv.totalAmount).toLocaleString(locale)}</td>

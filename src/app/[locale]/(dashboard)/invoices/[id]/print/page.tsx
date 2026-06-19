@@ -139,6 +139,7 @@ export default function InvoicePrintPage() {
 
     const dateObj = new Date(invoice.date);
     const formattedDate = `${dateObj.getDate()}/${dateObj.getMonth() + 1}/${dateObj.getFullYear()}`;
+    const formattedTime = dateObj.toLocaleTimeString('ar-EG', { hour: '2-digit', minute: '2-digit', hour12: true });
 
     return (
         <div className="min-h-screen bg-gray-100 flex flex-col md:flex-row print:block" dir="rtl" data-print-invoice-wrapper>
@@ -364,8 +365,13 @@ export default function InvoicePrintPage() {
                                         <td className="border border-gray-300 px-3 py-1 text-center font-bold text-lg">{sequenceId}</td>
                                     </tr>
                                     <tr>
-                                        <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center">التاريخ</td>
-                                        <td className="border border-gray-300 px-3 py-1 text-center">{formattedDate}</td>
+                                        <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center align-middle">التاريخ</td>
+                                        <td className="border border-gray-300 px-3 py-1 text-center">
+                                            <div className="flex flex-col items-center justify-center gap-0.5">
+                                                <span>{formattedDate}</span>
+                                                <span className="text-xs text-gray-500 font-medium" dir="ltr">{formattedTime}</span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center">المندوب</td>

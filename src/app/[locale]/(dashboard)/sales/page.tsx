@@ -165,6 +165,11 @@ export default function SalesPage() {
         month: 'long',
         day: 'numeric'
     });
+    const formattedTime = new Date().toLocaleTimeString('ar-EG', {
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    });
 
     useEffect(() => {
         setCustomerCode(Math.floor(10000 + Math.random() * 90000).toString());
@@ -883,8 +888,13 @@ export default function SalesPage() {
                                         <td className="border border-gray-300 px-3 py-1 text-center font-bold text-lg">{sequenceId}</td>
                                     </tr>
                                     <tr>
-                                        <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center">التاريخ</td>
-                                        <td className="border border-gray-300 px-3 py-1 text-center">{formattedDate}</td>
+                                        <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center align-middle">التاريخ</td>
+                                        <td className="border border-gray-300 px-3 py-1 text-center">
+                                            <div className="flex flex-col items-center justify-center gap-0.5">
+                                                <span>{formattedDate}</span>
+                                                <span className="text-xs text-gray-500 font-medium" dir="ltr">{formattedTime}</span>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td className="border border-gray-300 px-3 py-1 bg-gray-100 text-gray-700 font-bold text-center">المندوب</td>
