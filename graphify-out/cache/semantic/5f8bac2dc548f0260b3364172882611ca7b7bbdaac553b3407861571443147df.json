@@ -1,1 +1,0 @@
-{"nodes": [{"id": "bulk_route_post", "label": "POST", "file_type": "code", "source_file": "src/app/api/customers/bulk/route.ts"}], "edges": [{"source": "bulk_route_post", "target": "lib_prisma_getprisma", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/app/api/customers/bulk/route.ts"}], "hyperedges": []}

@@ -1,1 +1,0 @@
-{"nodes": [{"id": "inventory_route_get", "label": "GET", "file_type": "code", "source_file": "src/app/api/reports/inventory/route.ts"}], "edges": [{"source": "inventory_route_get", "target": "lib_prisma_getprisma", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "src/app/api/reports/inventory/route.ts"}], "hyperedges": []}
